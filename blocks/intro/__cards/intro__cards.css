@@ -1,0 +1,22 @@
+.intro__cards {
+  box-sizing: border-box;
+  display: grid;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1200px) {
+  .intro__cards {
+    gap: 24px 12px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .intro__cards {
+    grid-template-columns: 334px;
+    padding-left: 12px;
+    gap: 12px;
+  }
+}

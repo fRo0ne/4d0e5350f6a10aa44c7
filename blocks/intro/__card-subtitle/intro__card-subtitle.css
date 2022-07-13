@@ -1,0 +1,25 @@
+.intro__card-subtitle {
+  font-size: 1em;
+  margin: 12px auto 36px;
+  width: 498px;
+  color: #323232;
+  min-height: 75px;
+}
+
+@media screen and (max-width: 1200px) {
+  .intro__card-subtitle {
+    width: 306px;
+    min-height: 45px;
+    margin: 12px auto 28px;
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .intro__card-subtitle {
+    width: 300px;
+    min-height: 45px;
+    margin: 12px auto 12px;
+    font-size: 1.1em;
+  }
+}

@@ -1,0 +1,19 @@
+.intro__link-container {
+  width: 498px;
+  margin: 0 auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+  .intro__link-container {
+    width: 310px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .intro__link-container {
+    padding-bottom: 12px;
+  }
+}

@@ -1,0 +1,25 @@
+.popup__subtitle {
+  font-size: 0.8em;
+  line-height: 1;
+  padding: 12px 0 16px;
+  margin: auto;
+  width: 189px;
+  color: #323232;
+}
+
+@media screen and (max-width: 1200px) {
+  .popup__subtitle {
+    width: 150px;
+    padding: 12px 0 12px;
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .popup__subtitle {
+    width: 120px;
+    padding: 12px 0 12px;
+    font-size: 0.9em;
+    margin: auto;
+  }
+}
