@@ -1,0 +1,28 @@
+.intro__card-title {
+  font-size: 1.8em;
+  margin-top: 32px;
+  padding-left: 32px;
+  margin-bottom: 0;
+  margin-right: 0;
+  color: #323232;
+  line-height: 1em;
+}
+
+@media screen and (max-width: 1200px) {
+  .intro__card-title {
+    width: 306px;
+    margin-top: 28px;
+    line-height: 1.3em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .intro__card-title {
+    width: 315px;
+    margin: auto;
+    margin-top: 16px;
+    padding: 0;
+    line-height: 1.1em;
+    font-size: 2em;
+  }
+}

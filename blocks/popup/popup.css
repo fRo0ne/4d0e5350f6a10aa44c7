@@ -1,0 +1,25 @@
+.popup {
+  visibility: hidden;
+  width: 237px;
+  background-color: #a5cdab;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .popup {
+    width: 191px;
+    top: 45px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .popup {
+    width: 160px;
+    top: 45px;
+    display: flex;
+  }
+}
