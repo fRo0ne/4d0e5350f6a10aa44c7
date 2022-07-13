@@ -22,6 +22,6 @@
   }
 }
 
-.button_size-intro:disabled {
+.button_size-intro:hover {
   opacity: 0.5;
 }
