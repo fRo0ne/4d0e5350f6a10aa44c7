@@ -1,0 +1,11 @@
+.footer__links-section {
+  list-style-type: none;
+  border-top: 1px solid rgba(50, 50, 50, 0.3);
+  border-bottom: 1px solid rgba(50, 50, 50, 0.3);
+  height: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
