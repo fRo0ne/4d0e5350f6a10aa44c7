@@ -7,6 +7,7 @@
   margin: 0;
   padding-right: 190px;
   word-wrap: normal;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 1390px) {

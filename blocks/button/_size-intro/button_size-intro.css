@@ -21,7 +21,3 @@
     border-radius: 25px;
   }
 }
-
-.button_size-intro:disabled {
-  opacity: 0.5;
-}

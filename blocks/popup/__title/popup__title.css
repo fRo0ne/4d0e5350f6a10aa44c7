@@ -6,6 +6,7 @@
   line-height: 1.3em;
   width: 189px;
   color: #323232;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 1200px) {

@@ -1,0 +1,7 @@
+.item__image {
+  grid-area: image;
+  width: 212px;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
