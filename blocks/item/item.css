@@ -1,0 +1,10 @@
+.item {
+  width: 328px;
+  display: grid;
+  grid-template-columns: 116px 212px;
+  grid-template-areas:
+    "date image"
+    "tag image"
+    ". image"
+    "title title";
+}
