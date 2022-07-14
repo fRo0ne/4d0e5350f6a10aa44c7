@@ -1,0 +1,3 @@
+.footer__item_direction_horizontal:not(:last-of-type) {
+  margin-right: 60px;
+}
