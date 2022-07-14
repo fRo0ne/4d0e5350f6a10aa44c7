@@ -16,6 +16,7 @@
 @media screen and (max-width: 750px) {
   .intro__cards {
     grid-template-columns: 334px;
+    padding-left: 12px;
     gap: 12px;
   }
 }

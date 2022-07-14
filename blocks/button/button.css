@@ -5,11 +5,6 @@
   border: none;
   cursor: pointer;
   background: #A5CDAB;
-  text-align: center;
-}
-
-.button:hover {
-  background: #97BA9C;
 }
 
 .button:active {
