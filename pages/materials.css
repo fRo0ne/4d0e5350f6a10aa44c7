@@ -1,5 +1,7 @@
 .materials{
   width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 56px 148px 75px;
   box-sizing: border-box;
 }
@@ -8,9 +10,7 @@
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
-  font-size: 2.3em;
-  line-height: 1.2;
-  font-weight: 400;
+  font: normal 2.3em/1.2 "WF", "PT Sans", sans-serif;
   color: #323232;
   text-align: center;
 }
@@ -61,10 +61,7 @@
   box-sizing: border-box;
   background: #A5CDAB;
   border-radius: 8px;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 0.7em;
-  line-height: 1.28;
-  font-weight: 400;
+  font: normal 0.7em/1.28 'PT Sans', sans-serif;
   text-transform: uppercase;
   color: #323232;
   overflow: hidden;
@@ -80,10 +77,7 @@
   margin: 0;
   margin-bottom: 12px;
   padding: 0;
-  font-family: 'WF', 'PT Sans', sans-serif;
-  font-size: 1.3em;
-  line-height: 1;
-  font-weight: 400;
+  font: normal 1.3em/1 'WF', 'PT Sans', sans-serif;
   color: #323232;
   text-align: center;
 }
@@ -103,10 +97,7 @@
   overflow: hidden;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 0.8em;
-  line-height: 1.31;
-  font-weight: 400;
+  font: normal 0.8em/1.31 'PT Sans', sans-serif;
   text-align: center;
   color: rgba(50, 50, 50, 0.7);
 }
