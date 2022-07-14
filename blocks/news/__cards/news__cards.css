@@ -1,0 +1,8 @@
+.news__cards {
+  max-width: 1144px;
+  margin: 62px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 328px);
+  gap: 80px;
+  padding: 0;
+}

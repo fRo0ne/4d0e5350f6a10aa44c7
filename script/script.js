@@ -1,5 +1,6 @@
-const closeButton = document.querySelector(".popup");
+const popup = document.querySelector(".popup");
+const closeButton = document.querySelector(".popup__close-button");
 
 closeButton.addEventListener("click", () => {
-  closeButton.classList.remove("popup_opened");
+  popup.classList.remove("popup_opened");
 });
