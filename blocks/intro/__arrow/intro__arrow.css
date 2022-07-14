@@ -1,0 +1,17 @@
+.intro__arrow {
+  color: #323232;
+  width: 20px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .intro__arrow {
+    width: 15px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .intro__arrow {
+    width: 20px;
+  }
+}
