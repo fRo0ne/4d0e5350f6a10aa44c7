@@ -18,8 +18,8 @@
 
 @media screen and (max-width: 750px) {
   .popup {
-    width: 155px;
-    top: 18px;
+    width: 160px;
+    top: 45px;
     display: flex;
   }
 }

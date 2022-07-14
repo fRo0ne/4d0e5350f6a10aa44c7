@@ -5,14 +5,14 @@
   color: #323232;
   padding-top: 70px;
   margin: 0;
-  padding-right: 190px;
+  margin-left: -115px;
   word-wrap: normal;
   font-weight: 400;
 }
 
 @media screen and (max-width: 1390px) {
   .intro__title {
-    padding-right: 0;
+    margin-left: 0;
   }
 }
 

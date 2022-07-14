@@ -18,9 +18,8 @@
 @media screen and (max-width: 750px) {
   .popup__subtitle {
     width: 120px;
-    padding: 10px 0 12px;
+    padding: 12px 0 12px;
     font-size: 0.9em;
     margin: auto;
-    line-height: 1.1em;
   }
 }
