@@ -3,6 +3,6 @@
   margin: 62px auto 0;
   display: grid;
   grid-template-columns: repeat(3, 328px);
-  gap: 80px;
+  gap: 66px 80px;
   padding: 0;
 }

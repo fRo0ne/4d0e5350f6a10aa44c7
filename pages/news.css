@@ -18,3 +18,4 @@
 @import url(../blocks/page-numbers/__arrow-left/page-numbers__arrow-left.css);
 @import url(../blocks/page-numbers/__arrow-right/page-numbers__arrow-right.css);
 @import url(../blocks/page-numbers/__number/page-numbers__number.css);
+@import url(../blocks/page-numbers/__number/_active/page-numbers__number_active.css);
