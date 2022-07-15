@@ -1,7 +1,10 @@
 .item {
   width: 328px;
+  max-height: 400px;
   display: grid;
   grid-template-columns: 116px 212px;
+  overflow: hidden;
+  grid-template-rows: 20px 20px 180px 150px;
   grid-template-areas:
     "date image"
     "tag image"

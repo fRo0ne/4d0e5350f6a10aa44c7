@@ -1,0 +1,10 @@
+.page-numbers__arrow-left {
+  padding: 0;
+  border: 0;
+  background: none;
+  background-image: url(../../../images/Arrow_left.svg);
+  width: 24px;
+  background-repeat: no-repeat;
+  margin-right: 160px;
+  cursor: pointer;
+}
