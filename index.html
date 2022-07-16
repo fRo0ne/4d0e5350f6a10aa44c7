@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="pages/menu.css" />
     <link rel="stylesheet" href="pages/materials.css" />
     <link rel="stylesheet" href="pages/footer.css" />
-    <link rel="stylesheet" href="pages/banner.css">
+    <link rel="stylesheet" href="pages/banner.css" />
     <title>Прожито</title>
   </head>
   <body>
@@ -34,14 +34,14 @@
               <li class="menu__item">
                 <a href="#" class="menu__link">О проекте</a>
                 <ul class="menu menu_dropdown">
-                  <li class="menu__item .menu__item_dropdown">
+                  <li class="menu__item menu__item_dropdown">
                     <a href="#" class="menu__link menu__link_dropdown"
-                      >О прожито</a
+                      >О&nbsp;прожито</a
                     >
                   </li>
                   <li class="menu__item menu__item_dropdown">
                     <a href="#" class="menu__link menu__link_dropdown"
-                      >Как работать?</a
+                      >Как&nbsp;работать?</a
                     >
                   </li>
                   <li class="menu__item menu__item_dropdown">
@@ -60,6 +60,55 @@
                 </ul>
               </li>
             </ul>
+          </nav>
+          <input class="menu__checkbox" id="menu__checkbox" type="checkbox" />
+          <label class="menu__button" for="menu__checkbox">
+            <img
+              alt="открыть"
+              class="menu__open-button"
+              src="/images/menu-mobil-open.svg"
+            />
+            <img
+              alt="закрыть"
+              class="menu__close-button"
+              src="/images/menu-mobil-close.svg"
+            />
+          </label>
+          <nav class="menu__mobile">
+            <div class="menu__mobile-links-section">
+              <ul class="menu__mobile-links">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Архив</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Корпус</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">О проекте</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu__mobile-links-section">
+              <ul class="menu__mobile-links">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">О&nbsp;прожито</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Как&nbsp;работать?</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Медиа</a>
+                </li>
+              </ul>
+              <ul class="menu__mobile-links">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Новости</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Спецпроекты</a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
       </header>
@@ -196,22 +245,34 @@
         </section>
 
         <!-- БАННЕР НА ГЛАВНОЙ -->
-      <section class="section banner">
-        <img src="./images/diary.jpg" alt="фотография Антиповой" class="banner_image">
-        <div class="banner__text-wrapper">
-          <h3 class="section__subtitle">Ищем редактора для дневника</h3>
-          <p class="banner__text">
-            «Отец мой, Георгий Васильевич Антипов, из богатой семьи. У его отца и деда были участки леса,
-            земли. Имел мой дед, Василий Кузьмич, лавку, в которой торговал бакалеей и красным товаром, и, конечно, занимался крестьянством,
-              т.е. земледелием. Жили они богато. Дети у дедушки Василия были все грамотные, и земледелием занимались неохотно».
-          </p>
-          <div class="banner__buttons-wrapper">
-            <a href="#" class="button button_color_transparent button_size_l">Перейти к материалу →</a>
-            <a href="#" class="button button_size_l">Оставить заявку →</a>
+        <section class="section banner">
+          <img
+            src="./images/diary.jpg"
+            alt="фотография Антиповой"
+            class="banner_image"
+          />
+          <div class="banner__text-wrapper">
+            <h3 class="section__subtitle">Ищем редактора для дневника</h3>
+            <p class="banner__text">
+              «Отец мой, Георгий Васильевич Антипов, из богатой семьи.
+              У его отца и деда были участки леса, земли. Имел мой дед, Василий
+              Кузьмич, лавку, в которой торговал бакалеей и красным товаром, и,
+              конечно, занимался крестьянством, т.е. земледелием. Жили
+              они богато. Дети у дедушки Василия были все грамотные,
+              и земледелием занимались неохотно».
+            </p>
+            <div class="banner__buttons-wrapper">
+              <a href="#" class="button button_color_transparent button_size_l"
+                >Перейти к материалу →</a
+              >
+              <a href="#" class="button button_size_l">Оставить заявку →</a>
+            </div>
           </div>
-        </div>
-      </section>
-      <button class="button button_size-intro"><i class="arrow">&rarr;</i></button> -->
+        </section>
+        <button class="button button_size-intro">
+          <i class="arrow">&rarr;</i>
+        </button>
+        -->
       </main>
       <footer class="footer">
         <nav>
@@ -243,7 +304,7 @@
                     src="images/telegram.svg"
                     class="footer__social-icon"
                     alt="telegram"
-                  />Телеграм</a
+                  /><span class="footer__link-text">Телеграм</span></a
                 >
               </li>
               <li class="footer__item footer__item_direction_vertical">
@@ -252,7 +313,7 @@
                     src="images/vk.svg"
                     class="footer__social-icon"
                     alt="vk"
-                  />Вконтакте</a
+                  /><span class="footer__link-text">Вконтакте</span></a
                 >
               </li>
             </ul>
@@ -271,5 +332,6 @@
       </footer>
     </div>
     <script src="script/script.js"></script>
+    <script src="script/polya.js"></script>
   </body>
 </html>

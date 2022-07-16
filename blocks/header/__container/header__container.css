@@ -7,3 +7,24 @@
   align-items: center;
   border-bottom: 1px #3232324d solid;
 }
+
+@media screen and (max-width: 1440px) {
+  .header__container {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__container {
+    max-width: 736px;
+    margin: 0 16px;
+    font: 14px/18px "PT sans", sans-serif;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header__container {
+    min-width: 336px;
+    margin: 0 12px;
+  }
+}

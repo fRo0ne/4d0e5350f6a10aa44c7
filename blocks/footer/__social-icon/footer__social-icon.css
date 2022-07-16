@@ -5,3 +5,11 @@
   height: 18px;
   margin-right: 8px;
 }
+
+@media screen and (max-width: 825px) {
+  .footer__social-icon {
+    width: 28px;
+    height: 28px;
+    margin: 0;
+  }
+}

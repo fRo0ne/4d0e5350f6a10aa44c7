@@ -10,3 +10,15 @@
   font: 1em/1.26 "PT sans", sans-serif;
   color: #323232;
 }
+
+@media screen and (max-width: 768px) {
+  .menu {
+    width: 284px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    display: none;
+  }
+}
