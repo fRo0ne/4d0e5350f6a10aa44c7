@@ -1,0 +1,11 @@
+.news-main__all {
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #F5F5F5;
+  max-width: 477px;
+  width: calc(100% - 64px);
+  margin-left: 32px;
+  padding: 16px 0 32px;
+}

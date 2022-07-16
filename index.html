@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="pages/footer.css" />
     <link rel="stylesheet" href="pages/banner.css" />
     <link rel="stylesheet" href="pages/special-projects.css">
+    <link rel="stylesheet" href="pages/news.css" />
     <title>Прожито</title>
   </head>
   <body>
@@ -155,8 +156,100 @@
           </div>
         </section>
         <!-- МАТЕРИАЛЫ -->
+        <section class="news-main">
+          <div class="news-main__all">
+            <h2 class="news-main__title">Новости и&nbsp;события</h2>
+            <a class="button button_color_transparent button_news">Ко всем новостям →</a>
+          </div>
+          <div class="slider__container">
+          <div class="slider">
+            <h2 class="section__title section__title_slider-margin">Свежее</h2>
+            <div class="button__container">
+              <button class="button button_color_transparent button_size-news arrow_left"></button>
+              <button class="button button_color_transparent button_size-news arrow_right"></button>
+            </div>
+            <div class="slider__wrapper">
+              <div class="slider__items">
+                <div class="item item_slider">
+                  <p class="item__date">27.01.2022</p>
+                  <p class="item__tag">Спецпроект</p>
+                  <h2 class="item__title">
+                    В издательстве Европейского ниверситета в Санкт-Петербурге вышла
+                    первая книга из  серии «Библиотека Прожито. Блокада»
+                  </h2>
+                  <img
+                    src="images/news__image_2.png"
+                    alt="Новостное изображение"
+                    class="item__image"
+                  />
+                </div>
+                <div class="item item_slider">
+                  <p class="item__date">27.01.2022</p>
+                  <h2 class="item__title">
+                    Центр изучения эго-документов «Прожито» проведёт
+                    исследовательскую лабораторию, посвящённую работе с дембельскими
+                    альбомами
+                  </h2>
+                  <img
+                    src="images/news__image_1.png"
+                    alt="Новостное изображение"
+                    class="item__image"
+                  />
+                </div>
+                <div class="item item_slider">
+                  <p class="item__date">27.01.2022</p>
+                  <p class="item__tag">Лекция</p>
+                  <h2 class="item__title">
+                      4 октября на фестивале «Тверской переплёт» выступит Михаил
+                      Мельниченко — историк, директор Центра «Прожито» ЕУСПб
+                  </h2>
+                  <img src="images/news__image_3.png" alt="Новостное изображение" class="item__image"/>
+                </div>
+                <div class="item item_slider">
+                  <p class="item__date">27.01.2022</p>
+                  <p class="item__tag">Спецпроект</p>
+                  <h2 class="item__title">
+                    В издательстве Европейского ниверситета в Санкт-Петербурге вышла
+                    первая книга из  серии «Библиотека Прожито. Блокада»
+                  </h2>
+                  <img
+                    src="images/news__image_2.png"
+                    alt="Новостное изображение"
+                    class="item__image"
+                  />
+                </div>
+                <div class="item item_slider">
+                  <p class="item__date">27.01.2022</p>
+                  <h2 class="item__title">
+                    Центр изучения эго-документов «Прожито» проведёт
+                    исследовательскую лабораторию, посвящённую работе с дембельскими
+                    альбомами
+                  </h2>
+                  <img
+                    src="images/news__image_1.png"
+                    alt="Новостное изображение"
+                    class="item__image"
+                  />
+                </div>
+                <div class="item item_slider">
+                  <p class="item__date">27.01.2022</p>
+                  <p class="item__tag">Лекция</p>
+                  <h2 class="item__title">
+                      4 октября на фестивале «Тверской переплёт» выступит Михаил
+                      Мельниченко — историк, директор Центра «Прожито» ЕУСПб
+                  </h2>
+                  <img src="images/news__image_3.png" alt="Новостное изображение" class="item__image"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__indicators slider__indicators_margin-bottom">
+            <button class="slider__indicator"></button>
+          </div>
+          </div>
+        </section>
         <section class="section materials">
-          <h2 class="section__title">Материалы</h2>
+          <h2 class="section__title section_text-align">Материалы</h2>
           <ul class="cards">
             <li class="card">
               <a href="#" class="card__link">
@@ -238,7 +331,7 @@
           </div>
         </section>
         <section class="special-projects">
-          <h2 class="section__title">Спецпроекты</h2>
+          <h2 class="section__title section_text-align">Спецпроекты</h2>
           <div class="special-projects__container">
             <div class="special-projects__card">
               <img class="special-projects__image" alt="книга" src="./images/special-projects-card1.png">
@@ -249,7 +342,7 @@
               </div>
                 <p class="special-projects__date">13 декабря 2021</p>
               </div>
-              
+
             </div>
             <div class="special-projects__card">
               <img class="special-projects__image" alt="люди" src="./images/special-projects-card2.png">
@@ -260,7 +353,7 @@
               </div>
                 <p class="special-projects__date">13 декабря 2021</p>
               </div>
-              
+
             </div>
           </div>
           <div class="special-projects__button">
@@ -329,5 +422,6 @@
       </footer>
     </div>
     <script src="script/script.js"></script>
+    <script src="script/slider.js"></script>
   </body>
 </html>
