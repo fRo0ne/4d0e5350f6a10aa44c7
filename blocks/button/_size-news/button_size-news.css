@@ -1,0 +1,11 @@
+.button_size-news {
+  width: 36px;
+  height: 36px;
+  border-radius: 50px;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.button_size-news + .button_size-news {
+  margin-left: 8px;
+}

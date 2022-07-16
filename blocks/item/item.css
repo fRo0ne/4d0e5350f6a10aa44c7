@@ -2,7 +2,11 @@
   width: 328px;
   display: grid;
   grid-template-columns: 116px 212px;
+<<<<<<< Updated upstream
   grid-template-rows: 20px 20px 180px minmax(150px);
+=======
+  grid-template-rows: 20px 20px 180px 150px;
+>>>>>>> Stashed changes
   grid-template-areas:
     "date image"
     "tag image"

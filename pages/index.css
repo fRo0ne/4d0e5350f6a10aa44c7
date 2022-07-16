@@ -3,5 +3,19 @@
 @import url(../blocks/main/main.css);
 @import url(../blocks/button/button.css);
 @import url(../blocks/button/_size-intro/button_size-intro.css);
+@import url(../blocks/button/_size-news/button_size-news.css);
+@import url(../blocks/button/__container/button__container.css);
+@import url(../blocks/arrow/_left/arrow_left.css);
+@import url(../blocks/arrow/_right/arrow_right.css);
+@import url(../blocks/news-main/news-main.css);
+@import url(../blocks/news-main/__all/news-main__all.css);
+@import url(../blocks/news-main/__title/news-main__title.css);
+@import url(../blocks/slider/slider.css);
+@import url(../blocks/slider/__container/slider__container.css);
+@import url(../blocks/slider/__indicator/slider__indicator.css);
+@import url(../blocks/slider/__indicators/slider__indicators.css);
+@import url(../blocks/slider/__indicators/_margin-bottom/slider__indicators_margin-bottom.css);
+@import url(../blocks/slider/__items/slider__items.css);
+@import url(../blocks/slider/__wrapper/slider__wrapper.css);
 /* @import url(../blocks/arrow/arrow.css); */
 /* @import url(../blocks/arrow/_size-intro/arrow_size-intro.css); */
