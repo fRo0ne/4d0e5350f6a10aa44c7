@@ -5,3 +5,11 @@
   object-fit: cover;
   display: block;
 }
+
+
+@media screen and (max-width: 1023px) {
+  .item__image {
+    width: 102px;
+    height: 120px;
+  }
+}
