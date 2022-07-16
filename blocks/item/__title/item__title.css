@@ -8,3 +8,9 @@
   line-height: 1.3em;
   align-self: stretch;
 }
+
+@media screen and (max-width: 1023px) {
+  .item__title {
+    padding-top: 8px;
+  }
+}

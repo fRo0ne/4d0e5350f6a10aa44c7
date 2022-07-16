@@ -5,11 +5,14 @@
 @import url(../blocks/button/_size-intro/button_size-intro.css);
 @import url(../blocks/button/_size-news/button_size-news.css);
 @import url(../blocks/button/__container/button__container.css);
+@import url(../blocks/button/_news/button_news.css);
 @import url(../blocks/arrow/_left/arrow_left.css);
 @import url(../blocks/arrow/_right/arrow_right.css);
 @import url(../blocks/news-main/news-main.css);
 @import url(../blocks/news-main/__all/news-main__all.css);
 @import url(../blocks/news-main/__title/news-main__title.css);
+@import url(../blocks/news-main/__tablet-container/news-main__tablet-container.css);
+@import url(../blocks/news-main//__text-button/news-main__text-button.css);
 @import url(../blocks/slider/slider.css);
 @import url(../blocks/slider/__container/slider__container.css);
 @import url(../blocks/slider/__indicator/slider__indicator.css);
@@ -17,5 +20,21 @@
 @import url(../blocks/slider/__indicators/_margin-bottom/slider__indicators_margin-bottom.css);
 @import url(../blocks/slider/__items/slider__items.css);
 @import url(../blocks/slider/__wrapper/slider__wrapper.css);
+@import url(../blocks/journal-projito/journal-projito.css);
+@import url(../blocks/journal-projito/__card/journal-projito__card.css);
+@import url(../blocks/journal-projito/__card/_slider/journal-projito__card_slider.css);
+@import url(../blocks/journal-projito/_margin-bottom/journal-projito_margin-bottom.css);
+@import url(../blocks/journal-projito/__about/journal-projito__about.css);
+@import url(../blocks/journal-projito/__card-container/journal-projito__card-container.css);
+@import url(../blocks/journal-projito/__text-title/journal-projito__text-title.css);
+@import url(../blocks/journal-projito/__text-subtitile/journal-projito__text-subtitle.css);
+@import url(../blocks/journal-projito/__text-quote/journal-projito__text-quote.css);
+@import url(../blocks/journal-projito/__card/_reader/journal-projito__card_reader.css);
+@import url(../blocks/journal-projito/__text-container/_reader/journal-projito__text-container_reader.css);
+@import url(../blocks/journal-projito/_text-align/journal-projito_text-align.css);
+@import url(../blocks/journal-projito/_margin-top/journal-projito_margin-top.css);
+@import url(../blocks/journal-projito/__reader-photo/journal-projito__reader-photo.css);
+@import url(../blocks/image/_stalin/image_stalin.css);
+@import url(../blocks/image/_leningrad/image_leningrad.css);
 /* @import url(../blocks/arrow/arrow.css); */
 /* @import url(../blocks/arrow/_size-intro/arrow_size-intro.css); */

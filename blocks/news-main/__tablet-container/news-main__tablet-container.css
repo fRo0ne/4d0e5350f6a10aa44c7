@@ -1,0 +1,5 @@
+.news-main__tablet-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

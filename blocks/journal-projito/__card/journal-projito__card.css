@@ -1,0 +1,11 @@
+.journal-projito__card {
+  min-width: 328px;
+  width: 100%;
+  min-height: 526px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #F5F5F5;
+  border-radius: 8px;
+}
+

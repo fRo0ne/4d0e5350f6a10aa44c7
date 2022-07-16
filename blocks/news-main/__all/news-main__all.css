@@ -8,4 +8,14 @@
   width: calc(100% - 64px);
   margin-left: 32px;
   padding: 16px 0 32px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1023px) {
+  .news-main__all {
+    max-width: 253px;
+    min-height: 380px;
+    margin: 0;
+    padding: 16px 20px 41px 32px;
+  }
 }

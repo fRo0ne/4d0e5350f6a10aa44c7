@@ -5,4 +5,5 @@
   grid-template-columns: repeat(3, 328px);
   gap: 66px 80px;
   padding: 0;
+  align-items: baseline;
 }
