@@ -1,3 +1,53 @@
+@import url(../blocks/main/main.css);
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
-@import url(../blocks/main/main.css);
+
+.article {
+  max-width: 678px;
+  margin: auto;
+}
+.article h1 {
+  font-size: 2.9em;
+  color: #323232;
+  padding: 28px 0 16px;
+  border-bottom: 1px solid #3a543e;
+  font-weight: 400;
+  max-width: 677px;
+  text-align: center;
+  margin: 0;
+}
+
+.article h2 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.7em;
+  padding: 0 auto 0;
+  margin: 32px auto 0;
+  max-width: 650px;
+}
+
+.article p {
+  font-size: 1.2em;
+  padding: 32px 0 0;
+  max-width: 676px;
+  line-height: 1.55em;
+  margin: 0;
+  font-weight: 400;
+}
+
+.article p:nth-child(3) {
+  padding: 26px 0 0;
+}
+
+.article p:last-child {
+  padding: 26px 0 72px;
+}
+
+.article blockquote {
+  font-weight: 400;
+  padding: 0 0 0 16px;
+  border-left: 2px #3a543e solid;
+  margin: 32px 0 0;
+  font-size: 1.5em;
+  line-height: 1.1em;
+}
