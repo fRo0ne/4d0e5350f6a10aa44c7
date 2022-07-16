@@ -7,9 +7,9 @@
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1300px) {
   .materials {
-    padding: 45px;
+    padding: 56px 10px 75px;
   }
 }
 
@@ -19,26 +19,19 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .materials {
+    padding: 32px 41px;
+    overflow: hidden;
+  }
+}
 
 .section__title {
   margin: 0;
+  margin-bottom: 24px;
   padding: 0;
   font: normal 2.3em/1.2 "WF", "PT Sans", sans-serif;
   color: #323232;
-}
-
-.section_text-align {
-  text-align: center;
-}
-
-.section__title_slider-margin {
-  margin: 16px 0 24px;
-}
-@media screen and (max-width: 1439px) {
-  .section__title {
-    font-size: 2em;
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -48,61 +41,50 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .section__title {
+    font-size: 1.6em;
+  }
+}
+
+.section_text-align {
+  text-align: center;
+}
+
+.section__title_slider-margin {
+  margin: 16px 0 24px;
+}
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(238px, 328px));
-  grid-gap: 80px;
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-@media screen and (max-width: 1439px) {
-  .cards {
-    grid-gap: 50px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .cards {
-    grid-gap: 30px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .cards {
-    grid-gap: 12px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .cards {
-
-  }
-}
-
 .card {
+  width: 328px;
   height: 428px;
   background-color: #E7E4DE;
 }
 
-@media screen and (max-width: 1439px) {
-  .card {
-    height: 395px;
-  }
-}
-
 @media screen and (max-width: 1023px) {
   .card {
+    width: 238px;
     height: 360px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .card {
+    flex-shrink: 0;
+    width: 276px;
+    margin-right: 12px;
+  }
 
+  .card:last-child {
+    margin-right: 0;
   }
 }
 
@@ -119,13 +101,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 1439px) {
-  .card__link {
-    padding: 26px 14px 18px;
-  }
-}
-
- @media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .card__link {
     padding: 24px 12px 16px;
   }
@@ -153,23 +129,16 @@
   white-space: nowrap;
 }
 
-@media screen and (max-width: 1439px) {
-  .card__tag {
-    max-width: calc(280px - 20px * 2);
-    padding: 6px 20px;
-  }
-}
-
 @media screen and (max-width: 1023px) {
   .card__tag {
+    top: -12px;
     max-width: calc(250px - 16px * 2);
     padding: 4px 16px;
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 767px) {
   .card__tag {
-    max-width: calc(238px - 12px * 2);
     padding: 4px 12px;
     font-size: 0.6em;
     line-height: 1.33;
@@ -189,13 +158,6 @@
   text-align: center;
 }
 
-@media screen and (max-width: 1439px) {
-  .card__title {
-    font-size: 1em;
-    line-height: 1.1;
-  }
-}
-
 @media screen and (max-width: 1023px) {
   .card__title {
     font-size: 0.9em;
@@ -211,16 +173,16 @@
   object-position: bottom;
 }
 
-@media screen and (max-width: 1439px) {
-  .card__image {
-    width: 190px;
-    height: 200px;
-  }
-}
-
 @media screen and (max-width: 1023px) {
   .card__image {
     width: 173px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card__image {
+    width: 160px;
     height: 180px;
   }
 }
@@ -234,18 +196,7 @@
   padding: 0;
   font: normal 0.8em/1.31 'PT Sans', sans-serif;
   text-align: center;
-  color: rgba(50, 50, 50, 0.5);
-}
-
-.card__text_dark {
-  color: rgba(50, 50, 50, 0.7);
-}
-
-@media screen and (max-width: 1439px) {
-  .card__text {
-    font-size: 0.73em;
-    line-height: 1.28;
-  }
+  color: rgb(50, 50, 50);
 }
 
 @media screen and (max-width: 1023px) {
@@ -253,4 +204,41 @@
     font-size: 0.7em;
     line-height: 1.28;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .card__text {
+    font-size: 0.6em;
+    line-height: 1.33;
+  }
+}
+
+.materials__slider {
+  display:none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .materials__slider {
+    display: flex;
+  }
+}
+
+.button_size_xs {
+  width: 8px;
+  height: 8px;
+  margin: 0;
+  margin-right: 12px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.button_size_xs:last-child {
+  margin-right: 0;
+}
+
+.button_current {
+  background-color: #3A543E;
 }
