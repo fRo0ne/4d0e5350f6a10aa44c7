@@ -9,6 +9,6 @@
   text-align: center;
 }
 
-.popup-contens__link:first-child {
+.popup-contens__link:nth-child(2) {
   margin: 170px auto 0;
 }

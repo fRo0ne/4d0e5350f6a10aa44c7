@@ -1,0 +1,8 @@
+.popup-inf {
+  position: absolute;
+  top: 825px;
+  right: 32px;
+  background-color: #f7f4f0;
+  border-radius: 8px;
+  visibility: hidden;
+}
