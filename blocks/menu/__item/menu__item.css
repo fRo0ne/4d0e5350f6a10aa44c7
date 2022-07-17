@@ -22,3 +22,15 @@
   border-bottom: 1px solid #323232;
   margin-bottom: -1px;
 }
+
+@media screen and (max-width: 600px) {
+  .menu__item {
+    padding: 0;
+    height: 18px;
+  }
+
+  .menu__item:not(:last-of-type) {
+    margin-bottom: 28px;
+    margin-right: 0;
+  }
+}
