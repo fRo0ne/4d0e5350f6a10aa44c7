@@ -11,7 +11,7 @@
   color: #323232;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 765px) {
   .menu {
     width: 284px;
   }

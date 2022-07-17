@@ -1,5 +1,4 @@
 .footer__links-section {
-  list-style-type: none;
   border-top: 1px solid rgba(50, 50, 50, 0.3);
   border-bottom: 1px solid rgba(50, 50, 50, 0.3);
   height: 87px;
@@ -19,6 +18,7 @@
 
 @media screen and (max-width: 665px) {
   .footer__links-section {
-    flex-wrap: wrap;
+    flex-direction: column;
+    height: 105px;
   }
 }
