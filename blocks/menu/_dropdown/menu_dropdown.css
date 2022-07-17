@@ -11,3 +11,10 @@
   transition: visibility 0.1s, opacity 0.1s linear;
   align-items: flex-end;
 }
+
+@media screen and (max-width: 768px) {
+  .menu_dropdown {
+    width: 456px;
+    height: 25px;
+  }
+}

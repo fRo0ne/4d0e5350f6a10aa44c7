@@ -1,4 +1,31 @@
 .logo_place_footer {
-  width: 288.75px;
+  min-width: 290px;
   height: 30px;
+}
+
+@media screen and (max-width: 825px) {
+  .logo_place_footer {
+    margin-right: calc(100% * 300 / 735);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo_place_footer {
+    margin-right: calc(100% * 360 / 735);
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .logo_place_footer {
+    margin-right: calc(100% * 250 / 735);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo_place_footer {
+    order: 2;
+    margin: 0;
+    min-width: 256px;
+    height: 25px;
+  }
 }

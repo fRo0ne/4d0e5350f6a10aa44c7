@@ -3,3 +3,24 @@
   max-width: 1375px;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 1439px) {
+  .footer {
+    margin: 0 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin: 0 16px;
+    max-width: 735px;
+    font: 14px/18.13px "PT sans", sans-serif;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .footer {
+    margin: 0 12px;
+    width: 336px;
+  }
+}

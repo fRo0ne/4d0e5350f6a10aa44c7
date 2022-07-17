@@ -16,8 +16,9 @@
     <link rel="stylesheet" href="pages/menu.css" />
     <link rel="stylesheet" href="pages/materials.css" />
     <link rel="stylesheet" href="pages/footer.css" />
-    <link rel="stylesheet" href="pages/special-projects.css">
+    <link rel="stylesheet" href="pages/special-projects.css" />
     <link rel="stylesheet" href="pages/news.css" />
+    <link rel="stylesheet" href="pages/banner.css" />
     <title>Прожито</title>
   </head>
   <body>
@@ -36,14 +37,14 @@
               <li class="menu__item">
                 <a href="#" class="menu__link">О проекте</a>
                 <ul class="menu menu_dropdown">
-                  <li class="menu__item .menu__item_dropdown">
+                  <li class="menu__item menu__item_dropdown">
                     <a href="#" class="menu__link menu__link_dropdown"
-                      >О прожито</a
+                      >О&nbsp;прожито</a
                     >
                   </li>
                   <li class="menu__item menu__item_dropdown">
                     <a href="#" class="menu__link menu__link_dropdown"
-                      >Как работать?</a
+                      >Как&nbsp;работать?</a
                     >
                   </li>
                   <li class="menu__item menu__item_dropdown">
@@ -62,6 +63,55 @@
                 </ul>
               </li>
             </ul>
+          </nav>
+          <input class="menu__checkbox" id="menu__checkbox" type="checkbox" />
+          <label class="menu__button" for="menu__checkbox">
+            <img
+              alt="открыть"
+              class="menu__open-button"
+              src="/images/menu-mobil-open.svg"
+            />
+            <img
+              alt="закрыть"
+              class="menu__close-button"
+              src="/images/menu-mobil-close.svg"
+            />
+          </label>
+          <nav class="menu__mobile">
+            <div class="menu__mobile-links-section">
+              <ul class="menu__mobile-links">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Архив</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Корпус</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">О проекте</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu__mobile-links-section">
+              <ul class="menu__mobile-links">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">О&nbsp;прожито</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Как&nbsp;работать?</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Медиа</a>
+                </li>
+              </ul>
+              <ul class="menu__mobile-links">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Новости</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Спецпроекты</a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
       </header>
@@ -162,90 +212,100 @@
             <a class="button button_news">Ко всем новостям →</a>
           </div>
           <div class="slider__container">
-          <div class="slider">
-            <h2 class="section__title section__title_slider-margin">Свежее</h2>
-            <div class="button__container">
-              <button class="button button_size-news arrow_left"></button>
-              <button class="button button_size-news arrow_right"></button>
-            </div>
-            <div class="slider__wrapper">
-              <div class="slider__items">
-                <div class="item item_slider">
-                  <p class="item__date">27.01.2022</p>
-                  <p class="item__tag">Спецпроект</p>
-                  <h2 class="item__title">
-                    В издательстве Европейского ниверситета в Санкт-Петербурге вышла
-                    первая книга из  серии «Библиотека Прожито. Блокада»
-                  </h2>
-                  <img
-                    src="images/news__image_2.png"
-                    alt="Новостное изображение"
-                    class="item__image"
-                  />
-                </div>
-                <div class="item item_slider">
-                  <p class="item__date">27.01.2022</p>
-                  <h2 class="item__title">
-                    Центр изучения эго-документов «Прожито» проведёт
-                    исследовательскую лабораторию, посвящённую работе с дембельскими
-                    альбомами
-                  </h2>
-                  <img
-                    src="images/news__image_1.png"
-                    alt="Новостное изображение"
-                    class="item__image"
-                  />
-                </div>
-                <div class="item item_slider">
-                  <p class="item__date">27.01.2022</p>
-                  <p class="item__tag">Лекция</p>
-                  <h2 class="item__title">
+            <div class="slider">
+              <h2 class="section__title section__title_slider-margin">
+                Свежее
+              </h2>
+              <div class="button__container">
+                <button class="button button_size-news arrow_left"></button>
+                <button class="button button_size-news arrow_right"></button>
+              </div>
+              <div class="slider__wrapper">
+                <div class="slider__items">
+                  <div class="item item_slider">
+                    <p class="item__date">27.01.2022</p>
+                    <p class="item__tag">Спецпроект</p>
+                    <h2 class="item__title">
+                      В издательстве Европейского ниверситета в Санкт-Петербурге
+                      вышла первая книга из  серии «Библиотека Прожито. Блокада»
+                    </h2>
+                    <img
+                      src="images/news__image_2.png"
+                      alt="Новостное изображение"
+                      class="item__image"
+                    />
+                  </div>
+                  <div class="item item_slider">
+                    <p class="item__date">27.01.2022</p>
+                    <h2 class="item__title">
+                      Центр изучения эго-документов «Прожито» проведёт
+                      исследовательскую лабораторию, посвящённую работе
+                      с дембельскими альбомами
+                    </h2>
+                    <img
+                      src="images/news__image_1.png"
+                      alt="Новостное изображение"
+                      class="item__image"
+                    />
+                  </div>
+                  <div class="item item_slider">
+                    <p class="item__date">27.01.2022</p>
+                    <p class="item__tag">Лекция</p>
+                    <h2 class="item__title">
                       4 октября на фестивале «Тверской переплёт» выступит Михаил
                       Мельниченко — историк, директор Центра «Прожито» ЕУСПб
-                  </h2>
-                  <img src="images/news__image_3.png" alt="Новостное изображение" class="item__image"/>
-                </div>
-                <div class="item item_slider">
-                  <p class="item__date">27.01.2022</p>
-                  <p class="item__tag">Спецпроект</p>
-                  <h2 class="item__title">
-                    В издательстве Европейского ниверситета в Санкт-Петербурге вышла
-                    первая книга из  серии «Библиотека Прожито. Блокада»
-                  </h2>
-                  <img
-                    src="images/news__image_2.png"
-                    alt="Новостное изображение"
-                    class="item__image"
-                  />
-                </div>
-                <div class="item item_slider">
-                  <p class="item__date">27.01.2022</p>
-                  <h2 class="item__title">
-                    Центр изучения эго-документов «Прожито» проведёт
-                    исследовательскую лабораторию, посвящённую работе с дембельскими
-                    альбомами
-                  </h2>
-                  <img
-                    src="images/news__image_1.png"
-                    alt="Новостное изображение"
-                    class="item__image"
-                  />
-                </div>
-                <div class="item item_slider">
-                  <p class="item__date">27.01.2022</p>
-                  <p class="item__tag">Лекция</p>
-                  <h2 class="item__title">
+                    </h2>
+                    <img
+                      src="images/news__image_3.png"
+                      alt="Новостное изображение"
+                      class="item__image"
+                    />
+                  </div>
+                  <div class="item item_slider">
+                    <p class="item__date">27.01.2022</p>
+                    <p class="item__tag">Спецпроект</p>
+                    <h2 class="item__title">
+                      В издательстве Европейского ниверситета в Санкт-Петербурге
+                      вышла первая книга из  серии «Библиотека Прожито. Блокада»
+                    </h2>
+                    <img
+                      src="images/news__image_2.png"
+                      alt="Новостное изображение"
+                      class="item__image"
+                    />
+                  </div>
+                  <div class="item item_slider">
+                    <p class="item__date">27.01.2022</p>
+                    <h2 class="item__title">
+                      Центр изучения эго-документов «Прожито» проведёт
+                      исследовательскую лабораторию, посвящённую работе
+                      с дембельскими альбомами
+                    </h2>
+                    <img
+                      src="images/news__image_1.png"
+                      alt="Новостное изображение"
+                      class="item__image"
+                    />
+                  </div>
+                  <div class="item item_slider">
+                    <p class="item__date">27.01.2022</p>
+                    <p class="item__tag">Лекция</p>
+                    <h2 class="item__title">
                       4 октября на фестивале «Тверской переплёт» выступит Михаил
                       Мельниченко — историк, директор Центра «Прожито» ЕУСПб
-                  </h2>
-                  <img src="images/news__image_3.png" alt="Новостное изображение" class="item__image"/>
+                    </h2>
+                    <img
+                      src="images/news__image_3.png"
+                      alt="Новостное изображение"
+                      class="item__image"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="slider__indicators slider__indicators_margin-bottom">
-            <button class="slider__indicator"></button>
-          </div>
+            <div class="slider__indicators slider__indicators_margin-bottom">
+              <button class="slider__indicator"></button>
+            </div>
           </div>
         </section>
         <section class="section materials">
@@ -272,7 +332,10 @@
             <li class="card">
               <a href="#" class="card__link">
                 <p class="card__tag">НУЖНКА СВЕРКА</p>
-                <h3 class="card__title">Анонимный блокадный <br> дневник</h3>
+                <h3 class="card__title">
+                  Анонимный блокадный <br />
+                  дневник
+                </h3>
                 <img
                   src="./images/anonym.jpg"
                   alt="изображение анонима"
@@ -330,114 +393,224 @@
             <a class="button button_news">Перейти к журналу →</a>
           </div>
           <div class="slider__container">
-          <div class="slider">
-            <h2 class="section__title section__title_slider-margin">Новые материалы</h2>
-            <div class="button__container">
-              <button class="button button_size-news arrow_left"></button>
-              <button class="button button_size-news arrow_right"></button>
-            </div>
-            <div class="slider__wrapper">
-              <div class="slider__items journal-projito_margin-bottom">
-                <article class="journal-projito__card journal-projito__card_slider item_slider image_stalin">
-                  <div class="journal-projito__card-container">
-                  <blockquote class="journal-projito__about journal-projito_margin-top">Тематическая подборка</blockquote>
-                  <div class="journal-projito__text-container">
-                    <h2 class="journal-projito__text-title">Сталин умер</h2>
-                    <p class="journal-projito__text-subtitle">Что теперь будет?! Как нам жить без него?</p>
-                    <p class="journal-projito__text-quote">Все газеты впервые опубликовали портреты т.Сталина и многочисленные статьи. В них т.Сталин именуется вождём мирового пролетариата.</p>
-                  </div>
-                  </div>
-                </article>
-                <article class="journal-projito__card journal-projito__card_slider item_slider image_leningrad">
-                  <div class="journal-projito__card-container">
-                  <blockquote class="journal-projito__about journal-projito_margin-top">Спецпроект</blockquote>
-                  <div class="journal-projito__text-container">
-                    <h2 class="journal-projito__text-title">Блокада</h2>
-                    <p class="journal-projito__text-subtitle">Исследование блокадных дневников</p>
-                    <p class="journal-projito__text-quote">В условиях катастрофического голода, холода, вражеских бомбардировок и обстрелов сотни тысяч людей оказались заперты в городе. У многих из них был доступ к бумаге и чернилам, и некоторые начали вести дневники.</p>
-                  </div>
-                  </div>
-                </article>
-                <article class="journal-projito__card journal-projito__card_slider item_slider journal-projito__card_reader">
-                  <div class="journal-projito__card-container">
-                  <div class="journal-projito__text-container journal-projito__text-container_reader">
-                      <h2 class="journal-projito__text-title journal-projito_text-align journal-projito_margin-top">Галина Зеленина о дневниках Леонида Липкина</h2>
-                      <img class="journal-projito__reader-photo" src="images/lipkina.jpg" alt="Галина Зеленина, фото">
-                      <p class="journal-projito__text-quote journal-projito_text-align">историк, доцент кафедры теологии иудаизма, библеистики и иудаики РГГУ и ст. н. с. ШАГИ РАНХиГС</p>
-                  </div>
-                  <blockquote class="journal-projito__text-quote journal-projito_text-align">ОПЫТ ЧИТАТЕЛЯ</blockquote>
-                  </div>
-                </article>
-                <article class="journal-projito__card journal-projito__card_slider item_slider image_stalin">
-                  <div class="journal-projito__card-container">
-                  <blockquote class="journal-projito__about journal-projito_margin-top">Тематическая подборка</blockquote>
-                  <div class="journal-projito__text-container">
-                    <h2 class="journal-projito__text-title">Сталин умер</h2>
-                    <p class="journal-projito__text-subtitle">Что теперь будет?! Как нам жить без него?</p>
-                    <p class="journal-projito__text-quote">Все газеты впервые опубликовали портреты т.Сталина и многочисленные статьи. В них т.Сталин именуется вождём мирового пролетариата.</p>
-                  </div>
-                  </div>
-                </article>
-                <article class="journal-projito__card journal-projito__card_slider item_slider image_leningrad">
-                  <div class="journal-projito__card-container">
-                  <blockquote class="journal-projito__about journal-projito_margin-top">Спецпроект</blockquote>
-                  <div class="journal-projito__text-container">
-                    <h2 class="journal-projito__text-title">Блокада</h2>
-                    <p class="journal-projito__text-subtitle">Исследование блокадных дневников</p>
-                    <p class="journal-projito__text-quote">В условиях катастрофического голода, холода, вражеских бомбардировок и обстрелов сотни тысяч людей оказались заперты в городе. У многих из них был доступ к бумаге и чернилам, и некоторые начали вести дневники.</p>
-                  </div>
-                  </div>
-                </article>
-                <article class="journal-projito__card journal-projito__card_slider item_slider journal-projito__card_reader">
-                  <div class="journal-projito__card-container">
-                  <div class="journal-projito__text-container journal-projito__text-container_reader">
-                      <h2 class="journal-projito__text-title journal-projito_text-align journal-projito_margin-top">Галина Зеленина о дневниках Леонида Липкина</h2>
-                      <img class="journal-projito__reader-photo" src="images/lipkina.jpg" alt="Галина Зеленина, фото">
-                      <p class="journal-projito__text-quote journal-projito_text-align">историк, доцент кафедры теологии иудаизма, библеистики и иудаики РГГУ и ст. н. с. ШАГИ РАНХиГС</p>
-                  </div>
-                  <blockquote class="journal-projito__text-quote journal-projito_text-align">ОПЫТ ЧИТАТЕЛЯ</blockquote>
-                  </div>
-                </article>
+            <div class="slider">
+              <h2 class="section__title section__title_slider-margin">
+                Новые материалы
+              </h2>
+              <div class="button__container">
+                <button class="button button_size-news arrow_left"></button>
+                <button class="button button_size-news arrow_right"></button>
+              </div>
+              <div class="slider__wrapper">
+                <div class="slider__items journal-projito_margin-bottom">
+                  <article
+                    class="journal-projito__card journal-projito__card_slider item_slider image_stalin"
+                  >
+                    <div class="journal-projito__card-container">
+                      <blockquote
+                        class="journal-projito__about journal-projito_margin-top"
+                      >
+                        Тематическая подборка
+                      </blockquote>
+                      <div class="journal-projito__text-container">
+                        <h2 class="journal-projito__text-title">Сталин умер</h2>
+                        <p class="journal-projito__text-subtitle">
+                          Что теперь будет?! Как нам жить без него?
+                        </p>
+                        <p class="journal-projito__text-quote">
+                          Все газеты впервые опубликовали портреты т.Сталина
+                          и многочисленные статьи. В них т.Сталин именуется
+                          вождём мирового пролетариата.
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article
+                    class="journal-projito__card journal-projito__card_slider item_slider image_leningrad"
+                  >
+                    <div class="journal-projito__card-container">
+                      <blockquote
+                        class="journal-projito__about journal-projito_margin-top"
+                      >
+                        Спецпроект
+                      </blockquote>
+                      <div class="journal-projito__text-container">
+                        <h2 class="journal-projito__text-title">Блокада</h2>
+                        <p class="journal-projito__text-subtitle">
+                          Исследование блокадных дневников
+                        </p>
+                        <p class="journal-projito__text-quote">
+                          В условиях катастрофического голода, холода, вражеских
+                          бомбардировок и обстрелов сотни тысяч людей оказались
+                          заперты в городе. У многих из них был доступ к бумаге
+                          и чернилам, и некоторые начали вести дневники.
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article
+                    class="journal-projito__card journal-projito__card_slider item_slider journal-projito__card_reader"
+                  >
+                    <div class="journal-projito__card-container">
+                      <div
+                        class="journal-projito__text-container journal-projito__text-container_reader"
+                      >
+                        <h2
+                          class="journal-projito__text-title journal-projito_text-align journal-projito_margin-top"
+                        >
+                          Галина Зеленина о дневниках Леонида Липкина
+                        </h2>
+                        <img
+                          class="journal-projito__reader-photo"
+                          src="images/lipkina.jpg"
+                          alt="Галина Зеленина, фото"
+                        />
+                        <p
+                          class="journal-projito__text-quote journal-projito_text-align"
+                        >
+                          историк, доцент кафедры теологии иудаизма, библеистики
+                          и иудаики РГГУ и ст. н. с. ШАГИ РАНХиГС
+                        </p>
+                      </div>
+                      <blockquote
+                        class="journal-projito__text-quote journal-projito_text-align"
+                      >
+                        ОПЫТ ЧИТАТЕЛЯ
+                      </blockquote>
+                    </div>
+                  </article>
+                  <article
+                    class="journal-projito__card journal-projito__card_slider item_slider image_stalin"
+                  >
+                    <div class="journal-projito__card-container">
+                      <blockquote
+                        class="journal-projito__about journal-projito_margin-top"
+                      >
+                        Тематическая подборка
+                      </blockquote>
+                      <div class="journal-projito__text-container">
+                        <h2 class="journal-projito__text-title">Сталин умер</h2>
+                        <p class="journal-projito__text-subtitle">
+                          Что теперь будет?! Как нам жить без него?
+                        </p>
+                        <p class="journal-projito__text-quote">
+                          Все газеты впервые опубликовали портреты т.Сталина
+                          и многочисленные статьи. В них т.Сталин именуется
+                          вождём мирового пролетариата.
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article
+                    class="journal-projito__card journal-projito__card_slider item_slider image_leningrad"
+                  >
+                    <div class="journal-projito__card-container">
+                      <blockquote
+                        class="journal-projito__about journal-projito_margin-top"
+                      >
+                        Спецпроект
+                      </blockquote>
+                      <div class="journal-projito__text-container">
+                        <h2 class="journal-projito__text-title">Блокада</h2>
+                        <p class="journal-projito__text-subtitle">
+                          Исследование блокадных дневников
+                        </p>
+                        <p class="journal-projito__text-quote">
+                          В условиях катастрофического голода, холода, вражеских
+                          бомбардировок и обстрелов сотни тысяч людей оказались
+                          заперты в городе. У многих из них был доступ к бумаге
+                          и чернилам, и некоторые начали вести дневники.
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                  <article
+                    class="journal-projito__card journal-projito__card_slider item_slider journal-projito__card_reader"
+                  >
+                    <div class="journal-projito__card-container">
+                      <div
+                        class="journal-projito__text-container journal-projito__text-container_reader"
+                      >
+                        <h2
+                          class="journal-projito__text-title journal-projito_text-align journal-projito_margin-top"
+                        >
+                          Галина Зеленина о дневниках Леонида Липкина
+                        </h2>
+                        <img
+                          class="journal-projito__reader-photo"
+                          src="images/lipkina.jpg"
+                          alt="Галина Зеленина, фото"
+                        />
+                        <p
+                          class="journal-projito__text-quote journal-projito_text-align"
+                        >
+                          историк, доцент кафедры теологии иудаизма, библеистики
+                          и иудаики РГГУ и ст. н. с. ШАГИ РАНХиГС
+                        </p>
+                      </div>
+                      <blockquote
+                        class="journal-projito__text-quote journal-projito_text-align"
+                      >
+                        ОПЫТ ЧИТАТЕЛЯ
+                      </blockquote>
+                    </div>
+                  </article>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="slider__indicators slider__indicators_margin-bottom">
-            <button class="slider__indicator"></button>
-          </div>
+            <div class="slider__indicators slider__indicators_margin-bottom">
+              <button class="slider__indicator"></button>
+            </div>
           </div>
         </section>
         <section class="special-projects">
           <h2 class="section__title section_text-align">Спецпроекты</h2>
           <div class="special-projects__container">
             <div class="special-projects__card">
-              <img class="special-projects__image" alt="книга" src="./images/special-projects-card1.png">
+              <img
+                class="special-projects__image"
+                alt="книга"
+                src="./images/special-projects-card1.png"
+              />
               <div class="special-projects__main-text">
                 <div class="special-projects__field">
-                <h3 class="special-projects__subtitle">«Прожито» в Перми</h3>
-                <p class="special-projects__description">Проект осуществляет поиск и копирование документов в пермских государственных и семейных архивах для того, чтобы собрать цифровую народную коллекцию документов по истории города и края</p>
-              </div>
+                  <h3 class="special-projects__subtitle">«Прожито» в Перми</h3>
+                  <p class="special-projects__description">
+                    Проект осуществляет поиск и копирование документов
+                    в пермских государственных и семейных архивах для того,
+                    чтобы собрать цифровую народную коллекцию документов
+                    по истории города и края
+                  </p>
+                </div>
                 <p class="special-projects__date">13 декабря 2021</p>
               </div>
-
             </div>
             <div class="special-projects__card">
-              <img class="special-projects__image" alt="люди" src="./images/special-projects-card2.png">
+              <img
+                class="special-projects__image"
+                alt="люди"
+                src="./images/special-projects-card2.png"
+              />
               <div class="special-projects__main-text">
                 <div class="special-projects__field">
-                <h3 class="special-projects__subtitle">Блокада</h3>
-                <p class="special-projects__description">В условиях катастрофического голода, холода, вражеских бомбардировок и обстрелов сотни тысяч людей оказались заперты в городе. У многих из них был доступ к бумаге и чернилам, и некоторые начали вести дневники.</p>
-              </div>
+                  <h3 class="special-projects__subtitle">Блокада</h3>
+                  <p class="special-projects__description">
+                    В условиях катастрофического голода, холода, вражеских
+                    бомбардировок и обстрелов сотни тысяч людей оказались
+                    заперты в городе. У многих из них был доступ к бумаге
+                    и чернилам, и некоторые начали вести дневники.
+                  </p>
+                </div>
                 <p class="special-projects__date">13 декабря 2021</p>
               </div>
-
             </div>
           </div>
           <div class="special-projects__button">
             <button class="button">Спецпроекты &rarr;</button>
           </div>
         </section>
-      <!-- <h1>danya super puper coder =)</h1> -->
-      <!-- <button class="button">Оставить заявку<i class="arrow">&rarr;</i></button>
+        <!-- <h1>danya super puper coder =)</h1> -->
+        <!-- <button class="button">Оставить заявку<i class="arrow">&rarr;</i></button>
       <button class="button button_size-intro"><i class="arrow">&rarr;</i></button> -->
       </main>
       <footer class="footer">
@@ -470,7 +643,7 @@
                     src="images/telegram.svg"
                     class="footer__social-icon"
                     alt="telegram"
-                  />Телеграм</a
+                  /><span class="footer__link-text">Телеграм</span></a
                 >
               </li>
               <li class="footer__item footer__item_direction_vertical">
@@ -479,7 +652,7 @@
                     src="images/vk.svg"
                     class="footer__social-icon"
                     alt="vk"
-                  />Вконтакте</a
+                  /><span class="footer__link-text">Вконтакте</span></a
                 >
               </li>
             </ul>
@@ -514,5 +687,6 @@
     </div>
     <script src="script/script.js"></script>
     <script src="script/slider.js"></script>
+    <script src="script/polya.js"></script>
   </body>
 </html>
