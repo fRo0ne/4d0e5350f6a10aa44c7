@@ -6,10 +6,4 @@
   .footer__social-networks .footer__nav-links .footer__item_direction_vertical {
     margin-bottom: 0;
   }
-
-  .footer__legal-info
-    .footer__nav-links
-    .footer__item_direction_vertical:not(:last-of-type) {
-    margin-bottom: 8px;
-  }
 }
