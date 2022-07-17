@@ -24,7 +24,7 @@
   }
 }
 
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 830px) {
   .footer__social-networks {
     margin: 0;
     height: fit-content;
@@ -35,7 +35,7 @@
   }
 
   .footer__social-networks .footer__nav-links .footer__item:not(:last-child) {
-    margin-right: 28px;
+    margin-right: 24px;
   }
 }
 

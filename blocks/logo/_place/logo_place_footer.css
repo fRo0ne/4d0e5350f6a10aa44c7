@@ -3,19 +3,31 @@
   height: 30px;
 }
 
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 830px) {
   .logo_place_footer {
-    margin-right: calc(100% * 300 / 735);
+    margin-right: calc(100% * 340 / 735);
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .logo_place_footer {
-    margin-right: calc(100% * 360 / 735);
+    margin-right: calc(100% * 330 / 735);
   }
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 750px) {
+  .logo_place_footer {
+    margin-right: calc(100% * 310 / 735);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .logo_place_footer {
+    margin-right: calc(100% * 290 / 735);
+  }
+}
+
+@media screen and (max-width: 650px) {
   .logo_place_footer {
     margin-right: calc(100% * 250 / 735);
   }
