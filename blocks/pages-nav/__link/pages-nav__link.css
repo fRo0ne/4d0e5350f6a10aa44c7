@@ -1,10 +1,10 @@
-.news__nav-main {
+.pages-nav__link {
   text-decoration: none;
   color: #323232;
   cursor: pointer;
   padding-bottom: 10px;
 }
 
-.news__nav-main:hover {
+.pages-nav__link:hover {
   border-bottom: #323232 solid 1px;
 }

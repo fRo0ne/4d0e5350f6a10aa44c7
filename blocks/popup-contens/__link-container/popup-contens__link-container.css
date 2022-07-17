@@ -1,0 +1,6 @@
+.popup-contens__link-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0;
+  width: 926px;
+}
