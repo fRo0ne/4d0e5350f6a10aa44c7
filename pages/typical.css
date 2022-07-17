@@ -9,6 +9,11 @@
 @import url(../blocks/popup-contens/__link-container/popup-contens__link-container.css);
 @import url(../blocks/popup-contens/__link/popup-content__link.css);
 @import url(../blocks/popup-contens/__close-button/popup-contest__close-button.css);
+@import url(../blocks/popup-inf/popup-inf.css);
+@import url(../blocks/popup-inf/__close-button/popup-inf__close-button.css);
+@import url(../blocks/popup-inf/__subtitle/popup-inf__subtitle.css);
+@import url(../blocks/popup-inf/__title/popup-inf__title.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
 
 .article {
   max-width: 1440px;
@@ -75,26 +80,19 @@
   text-align: center;
 }
 
-/* .image div {
-  display: flex;
-  max-width: 910px;
-  height: 520px;
-  background-color: #f7f4f0;
-  overflow: hidden;
-} */
-
 .image img {
   max-height: 520px;
   width: 100%;
+  display: flex;
   object-fit: contain;
-  padding-top: 23px;
-  background: #F7F4F0;
+  background: #f7f4f0;
   box-sizing: border-box;
-  padding-bottom: 36px;
+  padding: 23px 0 36px;
 }
 
 .image figcaption {
   text-align: start;
+  align-self: center;
   width: 100%;
   margin: 0 0 0 230px;
   max-width: 550px;
