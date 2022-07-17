@@ -67,14 +67,12 @@
 
 .image {
   width: 910px;
-  /* height: 520px; */
   margin: 32px auto 0;
   padding: 0;
   display: inline-block;
   flex-direction: column;
   overflow: hidden;
   text-align: center;
-  background-color: #f7f4f0;
 }
 
 /* .image div {
@@ -86,12 +84,13 @@
 } */
 
 .image img {
-  margin: auto;
-  max-width: 90%;
-  max-height: 90%;
-  padding: 0;
-  align-items: center;
-  position: relative;
+  max-height: 520px;
+  width: 100%;
+  object-fit: contain;
+  padding-top: 23px;
+  background: #F7F4F0;
+  box-sizing: border-box;
+  padding-bottom: 36px;
 }
 
 .image figcaption {
