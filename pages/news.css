@@ -2,8 +2,8 @@
 @import url(../vendor/fonts/fonts.css);
 @import url(../blocks/main/main.css);
 @import url(../blocks/news/news.css);
-@import url(../blocks/news/__nav/news__nav.css);
-@import url(../blocks/news/__nav-main/news__nav-main.css);
+@import url(../blocks/pages-nav/pages-nav.css);
+@import url(../blocks/pages-nav/__link/pages-nav__link.css);
 
 @import url(../blocks/news/__title/news__title.css);
 @import url(../blocks/news/__cards/news__cards.css);

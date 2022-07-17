@@ -1,12 +1,23 @@
 @import url(../blocks/main/main.css);
 @import url(../vendor/normalize.css);
 @import url(../vendor/fonts/fonts.css);
+@import url(../blocks/pages-nav/pages-nav.css);
+@import url(../blocks/pages-nav/__link/pages-nav__link.css);
+@import url(../blocks/button/__contens/button__contens.css);
+@import url(../blocks/typical/typical__subtitle.css);
+@import url(../blocks/popup-contens/popup-contens.css);
+@import url(../blocks/popup-contens/__link-container/popup-contens__link-container.css);
+@import url(../blocks/popup-contens/__link/popup-content__link.css);
+@import url(../blocks/popup-contens/__close-button/popup-contest__close-button.css);
 
 .article {
-  max-width: 678px;
+  max-width: 1440px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 .article h1 {
+  max-width: 678px;
   font-size: 2.9em;
   color: #323232;
   padding: 28px 0 16px;
@@ -14,7 +25,7 @@
   font-weight: 400;
   max-width: 677px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto 0;
 }
 
 .article h2 {
@@ -31,7 +42,7 @@
   padding: 32px 0 0;
   max-width: 676px;
   line-height: 1.55em;
-  margin: 0;
+  margin: 0 auto 0;
   font-weight: 400;
 }
 
@@ -47,7 +58,49 @@
   font-weight: 400;
   padding: 0 0 0 16px;
   border-left: 2px #3a543e solid;
-  margin: 32px 0 0;
+  margin: 32px auto 0;
   font-size: 1.5em;
   line-height: 1.1em;
+  max-width: 676px;
+  position: relative;
+}
+
+.image {
+  width: 910px;
+  /* height: 520px; */
+  margin: 32px auto 0;
+  padding: 0;
+  display: inline-block;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: center;
+  background-color: #f7f4f0;
+}
+
+/* .image div {
+  display: flex;
+  max-width: 910px;
+  height: 520px;
+  background-color: #f7f4f0;
+  overflow: hidden;
+} */
+
+.image img {
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+  padding: 0;
+  align-items: center;
+  position: relative;
+}
+
+.image figcaption {
+  text-align: start;
+  width: 100%;
+  margin: 0 0 0 230px;
+  max-width: 550px;
+  padding: 16px 0 16px;
+  font-size: 1em;
+  border-bottom: 1px solid rgba(12, 6, 38, 0.7);
+  background-color: white;
 }
