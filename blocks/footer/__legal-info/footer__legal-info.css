@@ -5,10 +5,11 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .footer__legal-info {
     order: 3;
     align-self: flex-start;
     margin-top: 29px;
+    margin-bottom: 16px;
   }
 }

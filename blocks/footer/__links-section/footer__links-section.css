@@ -9,16 +9,15 @@
   padding: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
   .footer__links-section {
     text-transform: uppercase;
     height: 70px;
   }
 }
 
-@media screen and (max-width: 665px) {
+@media screen and (max-width: 767px) {
   .footer__links-section {
-    flex-direction: column;
-    height: 105px;
+    height: 104px;
   }
 }
