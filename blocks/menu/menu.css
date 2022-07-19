@@ -1,9 +1,10 @@
 .menu {
-  width: 345px;
+  min-width: 345px;
   list-style-type: none;
   height: 50px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   position: relative;
@@ -11,13 +12,13 @@
   color: #323232;
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 1023px) {
   .menu {
-    width: 284px;
+    min-width: 284px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .menu {
     display: none;
   }
