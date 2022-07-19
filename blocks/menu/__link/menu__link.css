@@ -3,6 +3,10 @@
   color: #323232;
 }
 
+.menu__link:last-of-type {
+  margin-right: 10px;
+}
+
 @media screen and (max-width: 600px) {
   .menu__link {
     padding: 0;
