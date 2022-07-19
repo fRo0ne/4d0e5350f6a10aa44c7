@@ -22,7 +22,7 @@
   display: none;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 768px) {
   #menu__checkbox:checked ~ .menu__mobile {
     display: none;
   }
