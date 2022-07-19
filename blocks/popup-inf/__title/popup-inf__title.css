@@ -4,3 +4,10 @@
   margin: 0;
   padding: 12px 0 0 12px;
 }
+
+@media screen and (max-width: 767px) {
+  .popup-inf__title {
+    font-size: 1.3em;
+    width: 150px;
+  }
+}

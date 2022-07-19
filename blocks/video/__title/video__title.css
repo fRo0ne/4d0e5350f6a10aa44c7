@@ -1,0 +1,17 @@
+.video__title {
+  font: 0.7em/1.3em "PT Sans", sans-serif;
+  text-align: start;
+  align-self: center;
+  width: 100%;
+  margin: 0 0 0 230px;
+  max-width: 550px;
+  padding: 16px 0 16px;
+  border-bottom: 1px solid rgba(12, 6, 38, 0.7);
+}
+
+@media screen and (max-width: 767px) {
+  .video__title {
+    max-width: 300px;
+    margin: 0;
+  }
+}
