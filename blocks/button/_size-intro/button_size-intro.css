@@ -6,7 +6,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1023px) {
   .button_size-intro {
     width: 32px;
     height: 32px;
@@ -14,10 +14,22 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
   .button_size-intro {
     width: 50px;
     height: 50px;
     border-radius: 25px;
   }
+}
+
+.button_size-intro:hover {
+  background-color: #97ba9c;
+}
+
+.button_size-intro:disabled {
+  background-color: rgba(165, 205, 171, 0.3);
+}
+
+.button_size-intro:active {
+  background-color: #7a9f80;
 }
