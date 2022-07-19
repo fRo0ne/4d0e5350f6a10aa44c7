@@ -7,13 +7,14 @@
   grid-template-columns: 1fr 1fr;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1023px) {
   .intro__cards {
     gap: 24px 12px;
+    grid-template-columns: repeat(2, 362px);
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
   .intro__cards {
     grid-template-columns: 334px;
     gap: 12px;

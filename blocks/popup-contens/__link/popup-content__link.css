@@ -12,3 +12,15 @@
 .popup-contens__link:nth-child(2) {
   margin: 170px auto 0;
 }
+
+@media screen and (max-width: 767px) {
+  .popup-contens__link {
+    width: 300px;
+    font-size: 1.5em;
+    margin: 24px auto 0;
+    padding: 0 0 24px;
+  }
+  .popup-contens__link:nth-child(2) {
+    margin: 100px auto 0;
+  }
+}

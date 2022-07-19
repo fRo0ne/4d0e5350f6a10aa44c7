@@ -4,3 +4,9 @@
   margin: 76px auto 0;
   max-width: 1440px;
 }
+
+@media screen and (max-width: 1023px) {
+  .journal-projito {
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,11 @@
+.button_color_transparent {
+  background-color: transparent;
+  border: 1px solid #323232;
+}
+
+.button_color_transparent:hover,
+.button_color_transparent:active,
+.button_color_transparent:disabled {
+  background-color: transparent;
+  opacity: 0.5;
+}

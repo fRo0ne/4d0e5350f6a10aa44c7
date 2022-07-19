@@ -4,7 +4,15 @@
   background: none;
   background-image: url(../../../images/Arrow_left.svg);
   width: 24px;
+  height: 24px;
   background-repeat: no-repeat;
   margin-right: 200px;
   cursor: pointer;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 767px) {
+  .page-numbers__arrow-left {
+    margin-right: 0;
+  }
 }

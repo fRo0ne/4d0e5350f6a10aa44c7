@@ -19,6 +19,8 @@
     .special-projects__card {
         max-width: 336px;
         margin: 24px 0 0;
+        background-color: #fff;
+        border: solid 1px #A5CDAB;
     }
 
     .special-projects__card:first-child {

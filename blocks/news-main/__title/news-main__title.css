@@ -3,3 +3,9 @@
   max-width: 360px;
   margin: 0;
 }
+
+@media screen and (max-width: 767px) {
+  .news-main__title {
+    white-space: nowrap;
+  }
+}

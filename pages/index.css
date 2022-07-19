@@ -19,7 +19,10 @@
 @import url(../blocks/slider/__indicators/slider__indicators.css);
 @import url(../blocks/slider/__indicators/_margin-bottom/slider__indicators_margin-bottom.css);
 @import url(../blocks/slider/__items/slider__items.css);
+@import url(../blocks/slider/__items/_baseline/slider__items_baseline.css);
 @import url(../blocks/slider/__wrapper/slider__wrapper.css);
+@import url(../blocks/image/_stalin/image_stalin.css);
+@import url(../blocks/image/_leningrad/image_leningrad.css);
 @import url(../blocks/journal-projito/journal-projito.css);
 @import url(../blocks/journal-projito/__card/journal-projito__card.css);
 @import url(../blocks/journal-projito/__card/_slider/journal-projito__card_slider.css);
@@ -34,7 +37,5 @@
 @import url(../blocks/journal-projito/_text-align/journal-projito_text-align.css);
 @import url(../blocks/journal-projito/_margin-top/journal-projito_margin-top.css);
 @import url(../blocks/journal-projito/__reader-photo/journal-projito__reader-photo.css);
-@import url(../blocks/image/_stalin/image_stalin.css);
-@import url(../blocks/image/_leningrad/image_leningrad.css);
 /* @import url(../blocks/arrow/arrow.css); */
 /* @import url(../blocks/arrow/_size-intro/arrow_size-intro.css); */

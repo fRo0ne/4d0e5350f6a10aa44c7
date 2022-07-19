@@ -1,12 +1,12 @@
 .intro__card-container {
-  width: 1144px;
+  max-width: 1144px;
   margin: auto;
   box-sizing: border-box;
   padding-top: 114px;
   padding-bottom: 164px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1023px) {
   .intro__card-container {
     max-width: 736px;
     padding-top: 28px;
@@ -14,7 +14,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
   .intro__card-container {
     padding-top: 93px;
     max-width: 336px;

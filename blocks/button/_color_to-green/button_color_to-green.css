@@ -1,0 +1,17 @@
+@media screen and (max-width: 1400px) {
+  .button_color_to-green {
+    border-color: #A5CDAB;
+  }
+
+  .button_color_to-green:hover {
+    border-color: #97BA9C;
+  }
+
+  .button_color_to-green:active {
+    border-color: #7A9F80;
+  }
+
+  .button_color_to-green:disabled {
+    border-color: rgba(165, 205, 171, 0.3);
+  }
+}

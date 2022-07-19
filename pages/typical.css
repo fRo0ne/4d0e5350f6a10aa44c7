@@ -5,6 +5,7 @@
 @import url(../blocks/pages-nav/__link/pages-nav__link.css);
 @import url(../blocks/button/__contens/button__contens.css);
 @import url(../blocks/typical/typical__subtitle.css);
+@import url(../blocks/typical/__subtitle-part/typical__subtitle-part.css);
 @import url(../blocks/popup-contens/popup-contens.css);
 @import url(../blocks/popup-contens/__link-container/popup-contens__link-container.css);
 @import url(../blocks/popup-contens/__link/popup-content__link.css);
@@ -14,6 +15,17 @@
 @import url(../blocks/popup-inf/__subtitle/popup-inf__subtitle.css);
 @import url(../blocks/popup-inf/__title/popup-inf__title.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/button/__play-video/button__play-video.css);
+@import url(../blocks/video/__container/video__container.css);
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/__title/video__title.css);
+@import url(../blocks/player/player.css);
+@import url(../blocks/player/__button-mute/player__button-mute.css);
+@import url(../blocks/player/__button-play/player__button-play.css);
+@import url(../blocks/player/__button-reverse-anticlockvise/player__button-reverse-enticlockwise.css);
+@import url(../blocks/player/__button-reverse-clockwise/player__button-reverse-clockwise.css);
+@import url(../blocks/player/__soundtrack/player__soundtrack.css);
+@import url(../blocks/player/__time/player__time.css);
 
 .article {
   max-width: 1440px;
@@ -22,8 +34,8 @@
   flex-direction: column;
 }
 .article h1 {
+  font: 2.3em/1.2em "WF", sans-serif;
   max-width: 678px;
-  font-size: 2.9em;
   color: #323232;
   padding: 28px 0 16px;
   border-bottom: 1px solid #3a543e;
@@ -34,21 +46,22 @@
 }
 
 .article h2 {
+  font: 1.3em/1em "WF", sans-serif;
   text-align: center;
   font-weight: 400;
-  font-size: 1.7em;
   padding: 0 auto 0;
   margin: 32px auto 0;
   max-width: 650px;
 }
 
 .article p {
-  font-size: 1.2em;
+  font: 0.9em/1.67em "PT Sans", sans-serif;
   padding: 32px 0 0;
   max-width: 676px;
-  line-height: 1.55em;
+  width: 100%;
   margin: 0 auto 0;
   font-weight: 400;
+  text-align: left;
 }
 
 .article p:nth-child(3) {
@@ -60,12 +73,11 @@
 }
 
 .article blockquote {
+  font: 1.3em/1em "WF", sans-serif;
   font-weight: 400;
   padding: 0 0 0 16px;
   border-left: 2px #3a543e solid;
   margin: 32px auto 0;
-  font-size: 1.5em;
-  line-height: 1.1em;
   max-width: 676px;
   position: relative;
 }
@@ -91,13 +103,47 @@
 }
 
 .image figcaption {
+  font: 0.7em/1.3em "PT Sans", sans-serif;
   text-align: start;
   align-self: center;
   width: 100%;
   margin: 0 0 0 230px;
   max-width: 550px;
   padding: 16px 0 16px;
-  font-size: 1em;
   border-bottom: 1px solid rgba(12, 6, 38, 0.7);
   background-color: white;
+}
+@media screen and (max-width: 1023px) {
+  .image {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .image {
+    max-width: 340px;
+    width: 100%;
+  }
+  .image figcaption {
+    max-width: 340px;
+    width: 100%;
+    margin: 0;
+  }
+  .article h1 {
+    max-width: 300px;
+    width: 100%;
+    font-size: 2em;
+  }
+  .article p {
+    max-width: 300px;
+    width: 100%;
+  }
+  .article h2 {
+    max-width: 300px;
+    width: 100%;
+  }
+  .article blockquote {
+    max-width: 300px;
+    width: 100%;
+  }
 }
