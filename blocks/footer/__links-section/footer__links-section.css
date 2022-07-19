@@ -11,6 +11,8 @@
 
 @media screen and (max-width: 1023px) {
   .footer__links-section {
+    border-top-color: rgba(165, 205, 171, 0.4);
+    border-bottom-color: rgba(165, 205, 171, 0.4);
     text-transform: uppercase;
     height: 70px;
   }
