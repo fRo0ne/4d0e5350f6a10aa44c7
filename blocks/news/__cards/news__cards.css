@@ -7,3 +7,11 @@
   padding: 0;
   align-items: baseline;
 }
+
+
+@media screen and (max-width: 600px) {
+  .news__cards {
+    display: flex;
+    flex-direction: column;
+  }
+}

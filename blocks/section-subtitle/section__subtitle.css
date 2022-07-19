@@ -1,4 +1,4 @@
-.section__subtitle{
+.section-subtitle{
   grid-column: 2;
   margin: 0;
   margin-bottom: 32px;
@@ -8,14 +8,14 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .section__subtitle {
+  .section-subtitle {
     line-height: 1.25;
     margin-bottom: 12px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .section__subtitle {
+  .section-subtitle {
     grid-column: 1;
     grid-row: 1;
     margin-bottom: 0;

@@ -20,3 +20,15 @@
     grid-template-columns: 78px 102px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .item {
+    grid-template-areas:
+    "image image"
+    "title title"
+    "date tag";
+    width: 100%;
+    grid-template-columns: auto;
+    gap: 8px 0;
+  }
+}

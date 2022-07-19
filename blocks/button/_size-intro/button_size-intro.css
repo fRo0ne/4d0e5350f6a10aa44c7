@@ -20,6 +20,17 @@
     height: 50px;
     border-radius: 25px;
   }
+  .news-main .button_size-intro {
+    background: transparent;
+    width: 21px;
+    height: 12px;
+  }
+  .journal-projito .button_size-intro {
+    background: transparent;
+    width: 21px;
+    height: 12px;
+  }
+
 }
 
 .button_size-intro:hover {

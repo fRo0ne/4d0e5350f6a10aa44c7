@@ -16,6 +16,15 @@
     max-width: 253px;
     min-height: 380px;
     margin: 0;
-    padding: 16px 20px 41px 32px;
+    padding: 16px 20px 41px 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news-main__all {
+    min-height: 60px;
+    max-width: 268px;
+    color: #323232;
+    padding: 0 0 16px;
   }
 }

@@ -2,3 +2,9 @@
   font: normal 1.3em/1 'WF', sans-serif;
   margin: 0;
 }
+
+@media screen and (max-width: 1023px) {
+  .journal-projito__text-title {
+    line-height: 1.3;
+  }
+}

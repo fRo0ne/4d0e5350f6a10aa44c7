@@ -1,5 +1,12 @@
 .slider__items {
   display: flex;
   transition: transform 0.5s ease;
-  align-items: baseline;
+}
+
+@media screen and (max-width: 767px) {
+  .slider__items {
+    flex-direction: column;
+    max-height: 770px;
+    overflow: hidden;
+  }
 }

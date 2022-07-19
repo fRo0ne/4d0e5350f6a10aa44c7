@@ -1,6 +1,6 @@
 @import url(../blocks/banner/banner.css);
 @import url(../blocks/banner/__image/banner__image.css);
-@import url(../blocks/section/__subtitle/section__subtitle.css);
+@import url(../blocks/section-subtitle/section__subtitle.css);
 @import url(../blocks/banner/__text/banner__text.css);
 @import url(../blocks/banner/__buttons-wrapper/banner__buttons-wrapper.css);
 @import url(../blocks/button/_size_l/button_size_l.css);

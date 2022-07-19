@@ -2,3 +2,14 @@
   margin-left: 20px;
 }
 
+@media screen and (max-width: 1023px) {
+  .item_slider + .item_slider {
+    margin-left: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .item_slider + .item_slider {
+    margin: 16px 0 0;
+  }
+}

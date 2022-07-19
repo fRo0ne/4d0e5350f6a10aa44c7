@@ -1,7 +1,9 @@
 @import url(../blocks/materials/materials.css);
-@import url(../blocks/section/__title/section__title.css);
-@import url(../blocks/section/_text-align/section_text-align.css);
-@import url(../blocks/section/__title/_materials-margin/section__title_materials-margin.css);
+@import url(../blocks/section-title/section__title.css);
+@import url(../blocks/section-title/_text-align/section-title_text-align.css);
+@import url(../blocks/section-title/_materials-margin/section-title_materials-margin.css);
+@import url(../blocks/section-title/_slider-margin/section-title_slider-margin.css);
+@import url(../blocks/section-title/_project-margin/section-title_project-margin.css);
 @import url(../blocks/cards/cards.css);
 @import url(../blocks/card/card.css);
 @import url(../blocks/card/__link/card__link.css);
