@@ -6,8 +6,6 @@
 @import url(../blocks/menu/__link/_dropdown/menu__link_dropdown.css);
 @import url(../blocks/menu/__checkbox/menu__checkbox.css);
 @import url(../blocks/menu/__button/menu__button.css);
-@import url(../blocks/menu/__close-button/menu__close-button.css);
-@import url(../blocks/menu/__open-button/menu__open-button.css);
 @import url(../blocks/menu/__mobile/menu__mobile.css);
 @import url(../blocks/menu/__mobile-links-section/menu__mobile-links-section.css);
 @import url(../blocks/menu/__mobile-links/menu__mobile-links.css);

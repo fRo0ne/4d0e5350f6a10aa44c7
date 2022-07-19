@@ -1,18 +1,19 @@
 .footer__logo-section {
   display: flex;
+  justify-content: space-between;
   margin-top: 32px;
   min-height: 190px;
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1023px) {
   .footer__logo-section {
     margin-top: 28px;
     min-height: 131px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .footer__logo-section {
     flex-direction: column;
     margin-top: 24px;

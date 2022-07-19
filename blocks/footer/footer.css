@@ -1,26 +1,21 @@
 .footer {
   font: 20px/1.26 "PT sans", sans-serif;
   max-width: 1375px;
+  width: calc(100vw * 1375 / 1440);
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1023px) {
   .footer {
-    margin: 0 32px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .footer {
-    margin: 0 16px;
     max-width: 735px;
+    width: calc(100vw * 735 / 768);
     font: 14px/18.13px "PT sans", sans-serif;
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 767px) {
   .footer {
-    margin: 0 12px;
-    width: 336px;
+    min-width: 336px;
+    width: calc(100vw * 336 / 360);
   }
 }

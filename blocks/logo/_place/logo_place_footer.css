@@ -3,37 +3,7 @@
   height: 30px;
 }
 
-@media screen and (max-width: 830px) {
-  .logo_place_footer {
-    margin-right: calc(100% * 340 / 735);
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .logo_place_footer {
-    margin-right: calc(100% * 330 / 735);
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .logo_place_footer {
-    margin-right: calc(100% * 310 / 735);
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .logo_place_footer {
-    margin-right: calc(100% * 290 / 735);
-  }
-}
-
-@media screen and (max-width: 650px) {
-  .logo_place_footer {
-    margin-right: calc(100% * 250 / 735);
-  }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .logo_place_footer {
     order: 2;
     margin: 0;

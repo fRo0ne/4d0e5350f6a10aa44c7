@@ -1,0 +1,11 @@
+.footer__list-item:not(:last-of-type) {
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__social-networks .footer__list-item {
+    display: inline;
+    margin: 0;
+    width: fit-content;
+  }
+}
