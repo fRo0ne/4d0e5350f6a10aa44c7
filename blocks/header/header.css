@@ -1,9 +1,5 @@
 .header {
   min-width: 360px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   background-color: #f7f4f0;
   font: 1em/1.26 "PT sans", sans-serif;
   z-index: 1;
