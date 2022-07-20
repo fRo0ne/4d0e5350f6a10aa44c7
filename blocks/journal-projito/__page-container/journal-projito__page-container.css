@@ -1,0 +1,16 @@
+.journal-projito__page-container {
+  max-width: 1144px;
+  width: calc(100% * 1144 / 1440);
+  margin: 42px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .journal-projito__page-container {
+    max-width: 612px;
+    width: calc(100% * 612 / 768);
+    margin: 27px auto 0;
+  }
+}
