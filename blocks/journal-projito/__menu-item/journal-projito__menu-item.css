@@ -16,3 +16,9 @@
     margin-right: 40px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .journal-projito__menu-item:not(:last-of-type) {
+    margin-right: 0;
+  }
+}

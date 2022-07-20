@@ -14,3 +14,11 @@
     margin: 27px auto 0;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .journal-projito__page-container {
+    width: calc(100vw * 336 / 360);
+    min-width: 336px;
+    margin: 15px auto 0;
+  }
+}
