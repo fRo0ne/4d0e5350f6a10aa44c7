@@ -2,8 +2,8 @@
   max-width: 1144px;
   margin: auto;
   box-sizing: border-box;
-  padding-top: 114px;
-  padding-bottom: 164px;
+  margin-top: 114px;
+  margin-bottom: 164px;
 }
 
 @media screen and (max-width: 1023px) {
