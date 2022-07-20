@@ -14,3 +14,10 @@
     min-width: 482px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .journal-projito__sort-menu {
+    flex-direction: column;
+    height: fit-content;
+  }
+}
