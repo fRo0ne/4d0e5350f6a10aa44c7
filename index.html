@@ -202,21 +202,19 @@
         <section class="news-main">
           <div class="news-main__all">
             <h2 class="news-main__title">Новости и события</h2>
-            <a class="button button_news">Ко всем новостям →</a>
+            <a class="button button_news" href="news.html"
+              >Ко всем новостям →</a
+            >
           </div>
           <div class="slider__container">
             <div class="slider">
-              <h2 class="section-title section-title_slider-margin">
-                Свежее
-              </h2>
+              <h2 class="section-title section-title_slider-margin">Свежее</h2>
               <div class="button__container">
                 <button class="button button_size-news arrow_left"></button>
                 <button class="button button_size-news arrow_right"></button>
               </div>
               <div class="slider__wrapper">
-                <div class="slider__items slider__items_baseline">
-
-                </div>
+                <div class="slider__items slider__items_baseline"></div>
               </div>
             </div>
             <div class="slider__indicators slider__indicators_margin-bottom">
@@ -225,7 +223,11 @@
           </div>
         </section>
         <section class="section materials">
-          <h2 class="section-title section-title_text-align section-title_materials-margin">Материалы</h2>
+          <h2
+            class="section-title section-title_text-align section-title_materials-margin"
+          >
+            Материалы
+          </h2>
           <ul class="cards">
             <li class="card">
               <a href="#" class="card__link">
@@ -309,9 +311,19 @@
             <a
               href="#"
               class="button banner__left-button button_color_transparent button_size_l button_color_to-green"
-              >Перейти к материалу <img src="./images/Arrow_right.svg" alt="стрелка направо" class="button__arrow"></a
-            >
-            <a href="#" class="button button_size_l">Оставить заявку  <img src="./images/Arrow_right.svg" alt="стрелка направо" class="button__arrow"></a>
+              >Перейти к материалу
+              <img
+                src="./images/Arrow_right.svg"
+                alt="стрелка направо"
+                class="button__arrow"
+            /></a>
+            <a href="#" class="button button_size_l"
+              >Оставить заявку
+              <img
+                src="./images/Arrow_right.svg"
+                alt="стрелка направо"
+                class="button__arrow"
+            /></a>
           </div>
         </section>
         <section class="journal-projito">
@@ -329,8 +341,7 @@
                 <button class="button button_size-news arrow_right"></button>
               </div>
               <div class="slider__wrapper">
-                <div class="slider__items journal-projito_margin-bottom">
-                </div>
+                <div class="slider__items journal-projito_margin-bottom"></div>
               </div>
             </div>
             <div class="slider__indicators slider__indicators_margin-bottom">
@@ -339,7 +350,11 @@
           </div>
         </section>
         <section class="special-projects">
-          <h2 class="section-title section-title_text-align section-title_project-margin">Спецпроекты</h2>
+          <h2
+            class="section-title section-title_text-align section-title_project-margin"
+          >
+            Спецпроекты
+          </h2>
           <div class="special-projects__container">
             <div class="special-projects__card">
               <img
@@ -442,26 +457,40 @@
         </div>
       </footer>
       <template id="template-projito">
-        <article class="journal-projito__card journal-projito__card_slider item_slider">
+        <article
+          class="journal-projito__card journal-projito__card_slider item_slider"
+        >
           <div class="journal-projito__card-container">
-            <blockquote class="journal-projito__about journal-projito_margin-top"></blockquote>
-              <div class="journal-projito__text-container">
-                <h2 class="journal-projito__text-title"></h2>
-                  <p class="journal-projito__text-subtitle"></p>
-                  <p class="journal-projito__text-quote"></p>
-                </div>
+            <blockquote
+              class="journal-projito__about journal-projito_margin-top"
+            ></blockquote>
+            <div class="journal-projito__text-container">
+              <h2 class="journal-projito__text-title"></h2>
+              <p class="journal-projito__text-subtitle"></p>
+              <p class="journal-projito__text-quote"></p>
             </div>
-          </article>
+          </div>
+        </article>
       </template>
       <template id="template-reader">
-        <article class="journal-projito__card journal-projito__card_slider item_slider journal-projito__card_reader">
+        <article
+          class="journal-projito__card journal-projito__card_slider item_slider journal-projito__card_reader"
+        >
           <div class="journal-projito__card-container">
-            <div class="journal-projito__text-container journal-projito__text-container_reader">
-              <h2 class="journal-projito__text-title journal-projito_text-align journal-projito_margin-top"></h2>
-              <img class="journal-projito__reader-photo" src="" alt=""/>
-                <p class="journal-projito__text-quote journal-projito_text-align"></p>
+            <div
+              class="journal-projito__text-container journal-projito__text-container_reader"
+            >
+              <h2
+                class="journal-projito__text-title journal-projito_text-align journal-projito_margin-top"
+              ></h2>
+              <img class="journal-projito__reader-photo" src="" alt="" />
+              <p
+                class="journal-projito__text-quote journal-projito_text-align"
+              ></p>
             </div>
-            <blockquote class="journal-projito__text-quote journal-projito_text-align journal-projito__text-quote_reader"></blockquote>
+            <blockquote
+              class="journal-projito__text-quote journal-projito_text-align journal-projito__text-quote_reader"
+            ></blockquote>
           </div>
         </article>
       </template>
@@ -469,9 +498,8 @@
         <div class="item item_slider">
           <p class="item__date"></p>
           <p class="item__tag"></p>
-          <h2 class="item__title">
-          </h2>
-          <img src="" alt="" class="item__image"/>
+          <h2 class="item__title"></h2>
+          <img src="" alt="" class="item__image" />
         </div>
       </template>
       <template id="button__tablet">
