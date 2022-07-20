@@ -7,3 +7,10 @@
     margin-bottom: 16px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .journal-projito_margin-bottom {
+    margin-bottom: 0;
+  }
+}
+

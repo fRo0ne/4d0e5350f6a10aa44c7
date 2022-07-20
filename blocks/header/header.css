@@ -3,11 +3,12 @@
   position: relative;
   background-color: #f7f4f0;
   font: 1em/1.26 "PT sans", sans-serif;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media screen and (max-width: 767px) {
   .header {
-    position: fixed;
+    position: sticky;
+    top: 0;
   }
 }

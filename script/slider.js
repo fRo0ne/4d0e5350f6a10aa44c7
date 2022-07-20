@@ -5,9 +5,20 @@ const arrowRightAll = document.querySelectorAll('.arrow_right');
 const sliderIndicatorsAll = document.querySelectorAll('.slider__indicator');
 // дефолтный шаг для индикатора и система координат.
 const defautlTransformIndicator = 15;
+// дефолтный шаг для слайдеров мобильной версии
+const defaultTransformMobileStep = 80;
 let y = 0;
 let x = 0;
 let isDrawing = false;
+// слайдеры projito
+const sliderJournal = document.querySelectorAll('.journal-projito__card');
+const countSliderJournal = sliderJournal.length * stepPosition;
+const defaultZindex = -sliderJournal.length;
+// слайдеры материалы
+const materials = document.querySelector('.materials');
+const cardsContainer = materials.querySelector('.cards');
+const buttonsMaterials = materials.querySelectorAll('.button');
+const buttonsContainerMaterials = materials.querySelector('.materials__slider');
 
 /**
  * метод обработки слайдера, проверка разницы координат, вызов экшинов по кнопкам, установка значений
@@ -125,6 +136,54 @@ function actionButtonRight(button,container,parentContainer,itemSlider,buttonLef
   setTransformValue(container, itemSliderWidth);
   disableButtonLeft(buttonLeft,container);
 }
+
+/**
+ *
+ * @param {*} element
+ * @returns
+ */
+function actionMobileSlider(container, step,index,el) {
+
+    const dataIdCard = el.dataset.id;
+    if(dataIdCard == 0) {
+      return false;
+    };
+    changeMaterialsCard(dataIdCard,container,step);
+}
+
+function getValuePositionCard(container,step) {
+  const valueTransform = getTransformValue(container);
+  const stepTransform = step + +valueTransform;
+  const stepPosition = stepTransform - step;
+  const newCardLeft = valueTransform !== '' ? +stepPosition + countSliderJournal : countSliderJournal;
+  setTransformValue(container,stepTransform);
+  return newCardLeft;
+}
+
+function setLeftPosition(element, position) {
+  element.style.left = ""+position+"px";
+}
+
+function setIndexCard(element,index) {
+  element.style.zIndex = index;
+}
+
+function setDatasetId(element,container) {
+  element.dataset.id = container.length + +element.dataset.id;
+}
+
+function changeMaterialsCard(dataIdCard,container,step) {
+  sliderJournal.forEach( el => {
+    if(dataIdCard > +el.dataset.id) {
+      const newPositionCard = getValuePositionCard(container,step);
+      setLeftPosition(el, newPositionCard);
+      setIndexCard(el,defaultZindex);
+      setDatasetId(el,sliderJournal);
+      renderNewsPrepend(el,container,step);
+    }
+  })
+}
+
 // геттеры на элементы
 function prepareSliderContainer(element) {
   return element.querySelector('.slider__items');
@@ -201,4 +260,48 @@ sliderIndicatorsAll.forEach( el => {
   });
 });
 
+sliderJournal.forEach ( (el,index) => {
+  const parentContainer = getParentContainer(el);
+  const sliderContainer = prepareSliderContainer(parentContainer);
+  el.addEventListener('click', () => {
+    checkWidthElement() > 767 ? false : actionMobileSlider(sliderContainer,defaultTransformMobileStep,index,el);
+  });
+});
 
+
+function actionMaterialsButton(element,index) {
+  const itemSliderWidth = calculateWidthElement(cardsContainer);
+  const newTransform = +itemSliderWidth * index;
+  const itemSlider = getItemSliderAll(cardsContainer);
+  const checkMaxTransform = itemSlider.length * itemSliderWidth - itemSliderWidth;
+  if(newTransform > checkMaxTransform) {
+    return false;
+  }
+  setTransformValue(cardsContainer, newTransform);
+
+}
+
+function setButtonInactive(element) {
+  element.classList.remove('button_current');
+}
+
+function setButtonActive(element) {
+  element.classList.add('button_current');
+}
+
+function checkButtonActive(element) {
+  return element.classList.contains('button_current');
+}
+
+buttonsMaterials.forEach( (el,index) => {
+  el.addEventListener('click', evt => {
+    const button = evt.target;
+    const activeButton = buttonsContainerMaterials.querySelector('.button_current');
+    if(checkButtonActive(button)) {
+      return false;
+    }
+    setButtonInactive(activeButton);
+    setButtonActive(button);
+    actionMaterialsButton(evt.target,index);
+  });
+})

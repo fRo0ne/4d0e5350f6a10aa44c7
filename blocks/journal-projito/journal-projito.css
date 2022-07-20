@@ -10,3 +10,12 @@
     margin-top: 25px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .journal-projito {
+    background: #FFFFFF;
+    flex-direction: column;
+    max-width: calc(100% - 12px);
+    margin-right: 0;
+  }
+}

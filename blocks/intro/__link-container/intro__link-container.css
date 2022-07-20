@@ -1,5 +1,5 @@
 .intro__link-container {
-  max-width: calc(562px - 7%);
+  max-width: calc(100% - 64px);
   width: 100%;
   margin: 0 auto 0;
   display: flex;
@@ -16,5 +16,6 @@
 @media screen and (max-width: 767px) {
   .intro__link-container {
     padding-bottom: 12px;
+    max-width: calc(100% - 24px);
   }
 }

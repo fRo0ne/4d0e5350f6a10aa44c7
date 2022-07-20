@@ -13,6 +13,8 @@ const templateProjitoCard = document.querySelector('#template-projito').content;
 const templateProjitoReader = document.querySelector('#template-reader').content;
 const limitIndex = 6;
 const limitMobile = 3;
+const stepPosition = 80;
+let startPosition = 0;
 
 function checkWidthElement() {
   return window.innerWidth;
@@ -75,7 +77,7 @@ function createNewsCard(item) {
   return sliderNews;
 
 }
-function createReaderCard (item) {
+function createReaderCard (item,index,position) {
   const sliderMaterial = templateProjitoReader.querySelector('.journal-projito__card').cloneNode(true);
   const materialTitle = sliderMaterial.querySelector('.journal-projito__text-title');
   const materialPhoto = sliderMaterial.querySelector('.journal-projito__reader-photo');
@@ -86,11 +88,15 @@ function createReaderCard (item) {
   materialTitle.textContent = item.title;
   mateirialQuote.textContent = item.about;
   materialText.textContent = item.quote;
+  sliderMaterial.style.zIndex = -index;
+  sliderMaterial.style.left = ""+position+"px";
+  sliderMaterial.dataset.id = index;
   return sliderMaterial;
 }
-function createMaterialsCard(item) {
+
+function createMaterialsCard(item,index,position) {
   if(item.reader) {
-    return createReaderCard(item);
+    return createReaderCard(item,index,position);
   }
   const sliderMaterial = templateProjitoCard.querySelector('.journal-projito__card').cloneNode(true);
   const materialTitle = sliderMaterial.querySelector('.journal-projito__text-title');
@@ -101,13 +107,20 @@ function createMaterialsCard(item) {
   materialSubtitle.textContent = item.subtitle;
   materialAbout.textContent = item.about;
   mateirialQuote.textContent = item.quote;
-  sliderMaterial.style.backgroundImage = `url('${item.image}')`;
+  sliderMaterial.style.background = `url('${item.image}') center/cover no-repeat`;
+  sliderMaterial.style.zIndex = -index;
+  sliderMaterial.style.left = ""+position+"px";
+  sliderMaterial.dataset.id = index;
   return sliderMaterial;
 
 }
 
 function renderNewsPrepend(cardNews,container) {
   container.prepend(cardNews);
+}
+
+function renderNewsAppend(cardNews,container) {
+  container.append(cardNews);
 }
 
 function checkRenderLimit(index,limit) {
@@ -148,7 +161,8 @@ newsElement.forEach( (item,index) => {
 materialsElement.forEach( (item,index) => {
   const limitRender = checkRenderLimit(index,limitIndex);
   if(limitRender) {
-    const newCard = createMaterialsCard(item);
-    renderNewsPrepend(newCard,sliderJournalContainer);
+    const newCard = createMaterialsCard(item,index,startPosition);
+    startPosition += stepPosition;
+    renderNewsAppend(newCard,sliderJournalContainer);
   }
 });

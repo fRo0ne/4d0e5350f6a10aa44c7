@@ -16,3 +16,12 @@
     background-size: contain;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .journal-projito__card {
+    position: absolute;
+    inset: 0;
+    width: 252px;
+    transition: transform 3s ease-out;
+  }
+}

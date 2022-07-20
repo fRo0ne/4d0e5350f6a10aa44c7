@@ -27,4 +27,7 @@
     color: #323232;
     padding: 0 0 16px;
   }
+  .journal-projito .news-main__all {
+    padding-bottom: 24px;
+  }
 }

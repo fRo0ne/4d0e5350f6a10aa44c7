@@ -12,4 +12,11 @@
   .item_slider + .item_slider {
     margin: 16px 0 0;
   }
+  .journal-projito .item_slider + .item_slider {
+    margin: 0;
+  }
+  .materials .item_slider + .item_slider {
+    margin: 0;
+    margin-right: 12px;
+  }
 }
