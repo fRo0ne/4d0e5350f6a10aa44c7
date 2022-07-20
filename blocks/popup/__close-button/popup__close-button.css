@@ -12,7 +12,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
   .popup__close-button {
     background-image: url(../../../images/popup__close_buton_320px.svg);
     left: -15px;

@@ -1,0 +1,23 @@
+.journal-projito__page-container {
+  max-width: calc(min(1144px, 100% - 294px));
+  margin: 42px auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .journal-projito__page-container {
+    max-width: calc(min(1144px, 100% - 156px));
+    margin: 27px auto 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .journal-projito__page-container {
+    width: calc(100% - 24px);
+    min-width: 336px;
+    margin: 15px auto 0;
+    overflow: hidden;
+  }
+}

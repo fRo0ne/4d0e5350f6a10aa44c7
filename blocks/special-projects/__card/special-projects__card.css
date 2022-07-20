@@ -1,0 +1,29 @@
+.special-projects__card {
+    background-color: #F7F4F0;
+    max-width: 678px;
+    display: flex;
+    margin-right: 20px;
+}
+.special-projects__card:last-child {
+    margin-right: 0;
+}
+@media screen and (max-width: 1023px) {
+    .special-projects__card {
+        max-width: 361px;
+        flex-direction: column;
+        margin-right: 14px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .special-projects__card {
+        max-width: 336px;
+        margin: 24px 0 0;
+        background-color: #fff;
+        border: solid 1px #A5CDAB;
+    }
+
+    .special-projects__card:first-child {
+        margin: 0;
+    }
+}

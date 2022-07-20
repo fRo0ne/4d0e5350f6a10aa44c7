@@ -7,13 +7,13 @@
   min-height: 276px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1023px) {
   .intro__card {
     min-height: 210px;
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
   .intro__card {
     min-height: 180px;
   }

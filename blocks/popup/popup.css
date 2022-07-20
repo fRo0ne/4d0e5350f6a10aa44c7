@@ -4,22 +4,24 @@
   background-color: #a5cdab;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 70px;
+  position: fixed;
+  top: 120px;
   right: 0;
+  order: 3;
+  z-index: 1;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1023px) {
   .popup {
     width: 191px;
-    top: 45px;
+    top: 90px;
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 767px) {
   .popup {
-    width: 160px;
-    top: 45px;
+    width: 155px;
+    top: 65px;
     display: flex;
   }
 }

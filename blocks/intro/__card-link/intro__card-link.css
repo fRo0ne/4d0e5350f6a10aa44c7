@@ -5,7 +5,7 @@
   border-radius: 25px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1023px) {
   .intro__card-link {
     width: 32px;
     height: 32px;

@@ -1,5 +1,22 @@
+/* header */
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__container/header__container.css);
-@import url(../blocks/header/__links/menu__links.css);
-@import url(../blocks/header/__links/_dropdown/menu__links_dropdown.css);
-@import url(../blocks/header/__link/menu__link.css);
+@import url(../blocks/header/_mobile-menu/header_mobile-menu.css);
+/* menu */
+@import url(../blocks/menu/menu.css);
+@import url(../blocks/menu/__dropdown/menu__dropdown.css);
+@import url(../blocks/menu/__item/menu__item.css);
+@import url(../blocks/menu/__item/_dropdown/menu__item_dropdown.css);
+@import url(../blocks/menu/__link/menu__link.css);
+@import url(../blocks/menu/__link/_dropdown/menu__link_dropdown.css);
+@import url(../blocks/menu/__checkbox/menu__checkbox.css);
+@import url(../blocks/menu/__button/menu__button.css);
+@import url(../blocks/menu/__mobile/menu__mobile.css);
+@import url(../blocks/menu/__mobile-links-section/menu__mobile-links-section.css);
+@import url(../blocks/menu/__mobile-links/menu__mobile-links.css);
+@import url(../blocks/menu/__open-button/menu__open-button.css);
+@import url(../blocks/menu/__close-button/menu__close-button.css);
+/* logo */
+@import url(../blocks/logo/logo.css);
+@import url(../blocks/logo/_place/logo_place_footer.css);
+@import url(../blocks/logo/_place/logo_place_header.css);

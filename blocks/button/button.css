@@ -3,14 +3,21 @@
   height: 50px;
   border-radius: 8px;
   border: none;
-  cursor: pointer;
+  cursor: pointer;=
+  background: #a5cdab;
+  text-align: center;
+}
+@media screen and (max-width: 1023px) {
+  .button {
+    width: 237px;
+    height: 48px;
+  }
   background: #A5CDAB;
 }
 
-.button:active {
-  background: #7A9F80;
-}
-
-.button:disabled {
-  background: rgba(165, 205, 171, 0.3);
+@media screen and (max-width: 767px) {
+  .button {
+    width: 335px;
+    height: 50px;
+  }
 }

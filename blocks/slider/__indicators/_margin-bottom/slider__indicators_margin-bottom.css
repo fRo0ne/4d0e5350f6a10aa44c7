@@ -1,0 +1,14 @@
+.slider__indicators_margin-bottom {
+  margin-bottom: 22px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+  .slider__indicators_margin-bottom {
+    margin-bottom: 25px;
+    margin-left: 12px;
+  }
+  .journal-projito .slider__indicators_margin-bottom {
+    margin-bottom: 15px;
+  }
+}
