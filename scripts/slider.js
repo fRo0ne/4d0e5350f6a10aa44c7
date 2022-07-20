@@ -1,24 +1,15 @@
-// все стрелки в пейдже
-const arrowLeftAll = document.querySelectorAll('.arrow_left');
-const arrowRightAll = document.querySelectorAll('.arrow_right');
-// индикаторы в пейдже
-const sliderIndicatorsAll = document.querySelectorAll('.slider__indicator');
 // дефолтный шаг для индикатора и система координат.
 const defautlTransformIndicator = 15;
 // дефолтный шаг для слайдеров мобильной версии
 const defaultTransformMobileStep = 80;
+const stepPosition = 80;
 let y = 0;
 let x = 0;
 let isDrawing = false;
-// слайдеры projito
-const sliderJournal = document.querySelectorAll('.journal-projito__card');
-const countSliderJournal = sliderJournal.length * stepPosition;
-const defaultZindex = -sliderJournal.length;
-// слайдеры материалы
-const materials = document.querySelector('.materials');
-const cardsContainer = materials.querySelector('.cards');
-const buttonsMaterials = materials.querySelectorAll('.button');
-const buttonsContainerMaterials = materials.querySelector('.materials__slider');
+
+function checkWidthElement() {
+  return window.innerWidth;
+}
 
 /**
  * метод обработки слайдера, проверка разницы координат, вызов экшинов по кнопкам, установка значений
@@ -142,16 +133,15 @@ function actionButtonRight(button,container,parentContainer,itemSlider,buttonLef
  * @param {*} element
  * @returns
  */
-function actionMobileSlider(container, step,index,el) {
-
+function actionMobileSlider(container,el,sliderContainer,countSliderJournal,defaultZindex) {
     const dataIdCard = el.dataset.id;
     if(dataIdCard == 0) {
       return false;
     };
-    changeMaterialsCard(dataIdCard,container,step);
+    changeMaterialsCard(dataIdCard,container,defaultTransformMobileStep,sliderContainer,countSliderJournal,defaultZindex);
 }
 
-function getValuePositionCard(container,step) {
+function getValuePositionCard(container,step,countSliderJournal) {
   const valueTransform = getTransformValue(container);
   const stepTransform = step + +valueTransform;
   const stepPosition = stepTransform - step;
@@ -172,13 +162,13 @@ function setDatasetId(element,container) {
   element.dataset.id = container.length + +element.dataset.id;
 }
 
-function changeMaterialsCard(dataIdCard,container,step) {
-  sliderJournal.forEach( el => {
+function changeMaterialsCard(dataIdCard,container,step,sliderContainer,countSliderJournal,defaultZindex) {
+  sliderContainer.forEach( el => {
     if(dataIdCard > +el.dataset.id) {
-      const newPositionCard = getValuePositionCard(container,step);
+      const newPositionCard = getValuePositionCard(container,step,countSliderJournal);
       setLeftPosition(el, newPositionCard);
       setIndexCard(el,defaultZindex);
-      setDatasetId(el,sliderJournal);
+      setDatasetId(el,sliderContainer);
       renderNewsPrepend(el,container,step);
     }
   })
@@ -212,62 +202,6 @@ function getButtonLeft(element) {
 function getButtonRight(element) {
   return element.querySelector('.arrow_right')
 }
-// слушатель событий на кнопку ВЛЕВО, работа сразу с неограниченным количеством слайдеров.
-arrowLeftAll.forEach( el => {
-  const parentContainer = getParentContainer(el);
-  const sliderContainer = prepareSliderContainer(parentContainer);
-  const indicatorContainer = getSliderIndicator(parentContainer);
-  const itemSlider = getItemSliderAll(parentContainer);
-  const buttonRight = getButtonRight(parentContainer);
-
-  disableButtonLeft(el,sliderContainer);
-  el.addEventListener('click', () => {
-    actionButtonLeft(el,sliderContainer,indicatorContainer,buttonRight,itemSlider);
-  });
-});
-// слушатель событий на кнопку ВПРАВО, работа сразу с неограниченным количеством слайдеров.
-arrowRightAll.forEach( el => {
-  const parentContainer = getParentContainer(el);
-  const sliderContainer = prepareSliderContainer(parentContainer);
-  const indicatorContainer = getSliderIndicator(parentContainer);
-  const itemSlider = getItemSliderAll(parentContainer);
-  const buttonLeft = getButtonLeft(parentContainer);
-
-  el.addEventListener('click', () => {
-    actionButtonRight(el,sliderContainer,indicatorContainer,itemSlider,buttonLeft);
-  });
-});
-// слушатель событий на индикатор, работа сразу с неограниченным количеством слайдеров.
-sliderIndicatorsAll.forEach( el => {
-  const parentContainer = getParentContainer(el);
-  const sliderContainer = prepareSliderContainer(parentContainer);
-  const indicatorContainer = getSliderIndicator(parentContainer);
-  const itemSlider = getItemSliderAll(parentContainer);
-  const buttonLeft = getButtonLeft(parentContainer);
-  const buttonRight = getButtonRight(parentContainer);
-  el.addEventListener('mousedown', e => {
-    isDrawing = true;
-    x = e.offsetX;
-  });
-  el.addEventListener('mousemove', e => {
-    if(isDrawing) {
-      swiping(x, e.offsetX,sliderContainer,indicatorContainer,itemSlider,buttonLeft,buttonRight);
-      isDrawing = false;
-    }
-  });
-  el.addEventListener('mouseup', () => {
-    isDrawing = false;
-  });
-});
-
-sliderJournal.forEach ( (el,index) => {
-  const parentContainer = getParentContainer(el);
-  const sliderContainer = prepareSliderContainer(parentContainer);
-  el.addEventListener('click', () => {
-    checkWidthElement() > 767 ? false : actionMobileSlider(sliderContainer,defaultTransformMobileStep,index,el);
-  });
-});
-
 
 function actionMaterialsButton(element,index) {
   const itemSliderWidth = calculateWidthElement(cardsContainer);
@@ -292,16 +226,3 @@ function setButtonActive(element) {
 function checkButtonActive(element) {
   return element.classList.contains('button_current');
 }
-
-buttonsMaterials.forEach( (el,index) => {
-  el.addEventListener('click', evt => {
-    const button = evt.target;
-    const activeButton = buttonsContainerMaterials.querySelector('.button_current');
-    if(checkButtonActive(button)) {
-      return false;
-    }
-    setButtonInactive(activeButton);
-    setButtonActive(button);
-    actionMaterialsButton(evt.target,index);
-  });
-})

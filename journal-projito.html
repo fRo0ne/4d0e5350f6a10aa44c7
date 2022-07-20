@@ -7,18 +7,13 @@
     <meta name="description" content="Проект “Прожито”" />
     <meta name="keywords" content="Интерактивный сайт, учеба" />
     <meta name="author" content="Team five" />
-    <link rel="stylesheet" href="pages/index.css" />
-    <link rel="stylesheet" href="pages/intro.css" />
-    <link rel="stylesheet" href="pages/logo.css" />
     <link rel="stylesheet" href="pages/header.css" />
-    <link rel="stylesheet" href="pages/menu.css" />
-    <link rel="stylesheet" href="pages/footer.css" />
-    <link rel="stylesheet" href="pages/news.css" />
     <link rel="stylesheet" href="pages/journal-projito.css" />
+    <link rel="stylesheet" href="pages/footer.css" />
     <title>Журнал «Прожито»</title>
   </head>
   <body>
-    <div class="main">
+    <div class="journal">
       <header class="header">
         <div class="header__container">
           <div class="logo logo_place_header"></div>
@@ -133,6 +128,9 @@
               <a class="journal-projito__menu-link">Опыт читателя</a>
             </li>
           </ul>
+          <ul class="journal-projito__materials">
+
+          </ul>
           <div class="page-numbers">
             <button class="page-numbers__arrow-left" type="button"></button>
             <button
@@ -205,10 +203,48 @@
         </div>
       </footer>
     </div>
-    <script src="script/new-materials.js"></script>
-    <script src="script/news-cards.js"></script>
-    <script src="script/script.js"></script>
-    <script src="script/slider.js"></script>
-    <script src="script/polya.js"></script>
+    <template id="template-projito">
+      <article
+        class="journal-projito__card item_slider"
+      >
+        <div class="journal-projito__card-container">
+          <blockquote
+            class="journal-projito__about journal-projito_margin-top"
+          ></blockquote>
+          <div class="journal-projito__text-container">
+            <h2 class="journal-projito__text-title"></h2>
+            <p class="journal-projito__text-subtitle"></p>
+            <p class="journal-projito__text-quote"></p>
+          </div>
+        </div>
+      </article>
+    </template>
+    <template id="template-reader">
+      <article
+        class="journal-projito__card item_slider journal-projito__card_reader"
+      >
+        <div class="journal-projito__card-container">
+          <div
+            class="journal-projito__text-container journal-projito__text-container_reader"
+          >
+            <h2
+              class="journal-projito__text-title journal-projito_text-align journal-projito_margin-top"
+            ></h2>
+            <img class="journal-projito__reader-photo" src="" alt="" />
+            <p
+              class="journal-projito__text-quote journal-projito_text-align"
+            ></p>
+          </div>
+          <blockquote
+            class="journal-projito__text-quote journal-projito_text-align journal-projito__text-quote_reader"
+          ></blockquote>
+        </div>
+      </article>
+    </template>
+    <script src="scripts/render-cards.js"></script>
+    <script src="scripts/new-materials.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/pages/journal/journal.js"></script>
   </body>
 </html>

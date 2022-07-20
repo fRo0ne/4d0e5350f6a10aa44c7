@@ -2,6 +2,10 @@
   margin-left: 20px;
 }
 
+.journal-projito__materials .item_slider + .item_slider {
+  margin: 0;
+}
+
 @media screen and (max-width: 1023px) {
   .item_slider + .item_slider {
     margin-left: 12px;
@@ -19,4 +23,5 @@
     margin: 0;
     margin-right: 12px;
   }
+
 }
