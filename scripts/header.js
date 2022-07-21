@@ -1,7 +1,7 @@
 const checkbox = document.querySelector('.menu__checkbox');
 const header = document.querySelector('.header');
 const linkDropdownMenu = document.querySelector('.menu__link_open-submenu');
-const menuDropdown = document.querySelector('.menu__mobile-links-section_closed');
+const menuDropdown = document.querySelector('.menu__mobile-links-section_dropdown');
 
 function removeClass(elem, className) {
   elem.classList.remove(className);
@@ -22,7 +22,6 @@ checkbox.addEventListener('click', function() {
 });
 
 window.addEventListener('resize', evt => {
-  console.log(evt.target.innerWidth)
   if (evt.target.innerWidth > 767) {
     checkbox.checked = false;
     removeClass(header, 'header_mobile-menu')
@@ -30,5 +29,9 @@ window.addEventListener('resize', evt => {
 })
 
 linkDropdownMenu.addEventListener('mouseover', () => {
-  menuDropdown.classList.toggle('menu__mobile-links-section_closed');
+  menuDropdown.classList.remove('menu__mobile-links-section_closed');
+})
+
+menuDropdown.addEventListener('mouseleave', () => {
+  addClass(menuDropdown, 'menu__mobile-links-section_closed')
 })
