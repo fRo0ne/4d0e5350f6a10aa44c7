@@ -3,7 +3,7 @@
 }
 
 .button_size-project:disabled {
-  background-color: rgba(165, 205, 171, 0.3);
+  opacity:  .5;
 }
 
 .button_size-project:active {

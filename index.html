@@ -193,9 +193,16 @@
         <section class="news-main">
           <div class="news-main__all">
             <h2 class="news-main__title">Новости и события</h2>
-            <a class="button button_news" href="news.html"
-              >Ко всем новостям →</a
-            >
+            <div class="news-main__tablet-container">
+              <p class="news-main__text-button">Ко всем новостям</p>
+              <a href="#" class="button button_size-intro">
+                <img
+                  src="images/Arrow_right_intro.svg"
+                  alt="Стрелка вправо"
+                  class="intro__arrow"
+                />
+              </a>
+            </div>
           </div>
           <div class="slider__container">
             <div class="slider">
@@ -221,7 +228,7 @@
           </h2>
           <ul class="cards">
             <li class="card item_slider">
-              <a href="#" class="card__link">
+              <a href="typical.html" class="card__link">
                 <p class="card__tag">НУЖЕН НАБОРЩИК</p>
                 <h3 class="card__title">
                   Артамонов <br />
@@ -239,7 +246,7 @@
               </a>
             </li>
             <li class="card item_slider">
-              <a href="#" class="card__link">
+              <a href="typical.html" class="card__link">
                 <p class="card__tag">НУЖНА СВЕРКА</p>
                 <h3 class="card__title">
                   Анонимный блокадный <br />
@@ -257,7 +264,7 @@
               </a>
             </li>
             <li class="card item_slider">
-              <a href="#" class="card__link">
+              <a href="typical.html" class="card__link">
                 <p class="card__tag">НОВЫЕ МАТЕРИАЛЫ</p>
                 <h3 class="card__title">
                   Родоман <br />
@@ -300,7 +307,7 @@
           </p>
           <div class="banner__buttons-wrapper">
             <a
-              href="#"
+              href="typical.html"
               class="button banner__left-button button_color_transparent button_size_l button_color_to-green"
               >Перейти к материалу
               <img
@@ -320,7 +327,16 @@
         <section class="journal-projito">
           <div class="news-main__all">
             <h2 class="news-main__title">Журнал «Прожито»</h2>
-            <a class="button button_news">Перейти к журналу →</a>
+            <div class="news-main__tablet-container">
+              <p class="news-main__text-button" >Перейти к журналу</p>
+              <button href="#" class="button button_size-intro" disabled>
+                <img
+                  src="images/Arrow_right_intro.svg"
+                  alt="Стрелка вправо"
+                  class="intro__arrow"
+                />
+              </button>
+            </div>
           </div>
           <div class="slider__container">
             <div class="slider">
@@ -387,7 +403,7 @@
             </div>
           </div>
           <div class="special-projects__button">
-            <button class="button button_size-project">
+            <button class="button button_size-project" disabled>
               Все спецпроекты &rarr;
             </button>
           </div>
@@ -494,21 +510,6 @@
           <h2 class="item__title"></h2>
           <img src="" alt="" class="item__image" />
         </div>
-      </template>
-      <template id="button__tablet">
-        <div class="news-main__tablet-container">
-          <p class="news-main__text-button"></p>
-          <a href="#" class="button button_size-intro">
-            <img
-              src="images/Arrow_right_intro.svg"
-              alt="Стрелка вправо"
-              class="intro__arrow"
-            />
-          </a>
-        </div>
-      </template>
-      <template id="button__desktop">
-        <a class="button button_news"></a>
       </template>
       <div class="popup popup_opened">
         <button class="popup__close-button"></button>

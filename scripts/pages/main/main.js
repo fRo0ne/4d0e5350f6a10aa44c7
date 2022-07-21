@@ -6,8 +6,8 @@ const sectionNewsMain = document.querySelectorAll(".news-main__all");
 const journalMainBlock = document.querySelector('.journal-projito');
 const sliderContainer = journalMainBlock.querySelector('.slider__items');
 const sectionReaderAll = document.querySelectorAll('.journal-projito__card_reader');
-const templateButtonNewsMain = document.querySelector("#button__tablet").content;
-const templateButtonDesktop = document.querySelector("#button__desktop").content;
+// const templateButtonNewsMain = document.querySelector("#button__tablet").content;
+// const templateButtonDesktop = document.querySelector("#button__desktop").content;
 const templateNewsMainBlock = document.querySelector("#template-news").content;
 const templateProjitoCard = document.querySelector('#template-projito').content;
 const templateProjitoReader = document.querySelector('#template-reader').content;
@@ -91,13 +91,13 @@ closeButton.addEventListener("click", () => {
 });
 
 
-sectionNewsMain.forEach( item => {
-  const parentItem = item.parentNode;
-  replacedButtonNews(item,parentItem);
-  window.addEventListener('resize', () => {
-  replacedButtonNews(item,parentItem);
-});
-});
+// sectionNewsMain.forEach( item => {
+//   const parentItem = item.parentNode;
+//   replacedButtonNews(item,parentItem);
+//   window.addEventListener('resize', () => {
+//   replacedButtonNews(item,parentItem);
+// });
+// });
 
 sectionReaderAll.forEach ( item => {
   item.querySelectorAll('.journal-projito__text-quote').forEach( item => {

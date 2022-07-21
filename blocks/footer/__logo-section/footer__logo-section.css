@@ -1,15 +1,13 @@
 .footer__logo-section {
   display: flex;
   justify-content: space-between;
-  margin-top: 32px;
-  min-height: 190px;
+  margin: 32px 0;
   flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1023px) {
   .footer__logo-section {
-    margin-top: 28px;
-    min-height: 131px;
+    margin: 28px 0 20px;
   }
 }
 
