@@ -3,6 +3,7 @@
   transition: transform 0.5s ease;
   position: relative;
   z-index: 1;
+  font-family: 'PT Sans', sans-serif;
 }
 
 @media screen and (max-width: 767px) {

@@ -11,6 +11,12 @@
 
 @media screen and (max-width: 1023px) {
   .item__title {
+    padding-top: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .item__title {
     padding: 0;
   }
 }

@@ -22,7 +22,7 @@
   }
 }
 
-.button_size-intro:hover {
+.button_size-intro:not([disabled]):hover {
   background-color: #97ba9c;
 }
 

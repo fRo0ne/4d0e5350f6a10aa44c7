@@ -1,7 +1,7 @@
 .button__contens {
   font: 1.3em/1em "WF", sans-serif;
   color: #323232;
-  position: absolute;
+  position: fixed;
   margin: 0;
   padding: 0 0 20px 0;
   top: 380px;
