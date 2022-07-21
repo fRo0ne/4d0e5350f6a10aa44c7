@@ -10,7 +10,7 @@
 }
 
 .menu__item:not(:last-of-type) {
-  margin-right: 60px;
+  margin-right: 40px;
 }
 
 .menu__item:hover .menu__dropdown {
