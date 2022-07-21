@@ -2,6 +2,7 @@
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__container/header__container.css);
 @import url(../blocks/header/_mobile-menu/header_mobile-menu.css);
+@import url(../blocks/header/_theme/header_theme_white.css);
 /* menu */
 @import url(../blocks/menu/menu.css);
 @import url(../blocks/menu/__dropdown/menu__dropdown.css);
