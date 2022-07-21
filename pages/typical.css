@@ -26,6 +26,9 @@
 @import url(../blocks/player/__button-reverse-clockwise/player__button-reverse-clockwise.css);
 @import url(../blocks/player/__soundtrack/player__soundtrack.css);
 @import url(../blocks/player/__time/player__time.css);
+@import url(../blocks/player/__container/player__container.css);
+@import url(../blocks/player/__title/player__title.css);
+@import url(../blocks/player/__button-stop/player__button-stop.css);
 
 .article {
   max-width: 1440px;
