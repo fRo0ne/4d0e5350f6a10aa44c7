@@ -82,6 +82,7 @@
 @import url(../blocks/special-projects/__field/special-projects__field.css);
 @import url(../blocks/special-projects/__button/special-projects__button.css);
 @import url(../blocks/button/_size-project/button_size-project.css);
+@import url(../blocks/special-projects/__title-container/special-projects__title-container.css);
 /* intro */
 @import url(../blocks/intro/intro.css);
 @import url(../blocks/intro/__card-container/intro__card-container.css);
