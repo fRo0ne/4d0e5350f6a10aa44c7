@@ -30,9 +30,5 @@ window.addEventListener('resize', evt => {
 })
 
 linkDropdownMenu.addEventListener('mouseover', () => {
-  removeClass(menuDropdown, 'menu__mobile-links-section_closed')
-})
-
-linkDropdownMenu.addEventListener('mouseout', () => {
-  addClass(menuDropdown, 'menu__mobile-links-section_closed')
+  menuDropdown.classList.toggle('menu__mobile-links-section_closed');
 })
