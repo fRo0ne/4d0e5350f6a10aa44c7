@@ -3,6 +3,9 @@ const arrowLeftAll = document.querySelectorAll('.arrow_left');
 const arrowRightAll = document.querySelectorAll('.arrow_right');
 // индикаторы в пейдже
 const sliderIndicatorsAll = document.querySelectorAll('.slider__indicator');
+// новости
+const blockNews = document.querySelector('.news-main');
+const cardsNewsContainer = blockNews.querySelector('.slider__items');
 // слайдеры материалы
 const materials = document.querySelector('.materials');
 const cardsContainer = materials.querySelector('.cards');
@@ -86,4 +89,5 @@ buttonsMaterials.forEach( (el,index) => {
 
 window.addEventListener('resize', () => {
   setTransformValue(cardsContainer, 0);
+  setTransformValue(cardsNewsContainer, 0);
 })

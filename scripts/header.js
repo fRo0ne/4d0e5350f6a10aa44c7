@@ -15,10 +15,10 @@ function addClass(elem, className) {
 
 checkbox.addEventListener('click', function() {
   if (checkbox.checked) {
-    addClass(header, 'header_mobile-menu')
+		header.classList.add('header_mobile-menu');
     return;
 	}
-	removeClass(header, 'header_mobile-menu')
+	header.classList.remove('header_mobile-menu');
 });
 
 window.addEventListener('resize', evt => {

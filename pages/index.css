@@ -5,6 +5,7 @@
 @import url(../blocks/button/button.css);
 @import url(../blocks/button/_size-intro/button_size-intro.css);
 @import url(../blocks/button/_size-news/button_size-news.css);
+@import url(../blocks/button/_size-slider/button_size-slider.css);
 @import url(../blocks/button/__container/button__container.css);
 @import url(../blocks/button/_size_xs/button_size_xs.css);
 @import url(../blocks/button/_current/button_current.css);
