@@ -1,7 +1,6 @@
 .main {
   font: 20px "WF", "PT Sans", sans-serif;
   margin: 0 auto;
-  overflow-x: hidden;
 }
 
 @media screen and (max-width: 1023px) {
