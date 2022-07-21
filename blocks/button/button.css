@@ -3,7 +3,7 @@
   height: 50px;
   border-radius: 8px;
   border: none;
-  cursor: pointer;=
+  cursor: pointer;
   background: #a5cdab;
   text-align: center;
 }
@@ -12,7 +12,6 @@
     width: 237px;
     height: 48px;
   }
-  background: #A5CDAB;
 }
 
 @media screen and (max-width: 767px) {
