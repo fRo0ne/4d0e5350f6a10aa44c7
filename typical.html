@@ -248,22 +248,32 @@
           Орлову: собирает ее фотографии и не пропускает ни одного фильма.
         </p>
         <section class="player">
-          <button type="button" class="player__button-play"></button>
-          <button
-            type="button"
-            class="player__button-reverse-anticlockwise"
-          ></button>
-          <button
-            type="button"
-            class="player__button-reverse-clockwise"
-          ></button>
-          <img
-            src="images/player(typical_page)/soundtrack.svg"
-            alt="Звуковая дорожка"
-            class="player__soundtrack"
-          />
-          <i class="player__time">15:20</i>
-          <button type="button" class="player__button-mute"></button>
+          <div class="player__container">
+            <audio src="audio/1564_Rodoman.mp3" type="audio" id="audio"></audio>
+            <button
+              type="button"
+              id="button-play"
+              class="player__button-play"
+            ></button>
+            <button
+              type="button"
+              class="player__button-reverse-anticlockwise"
+            ></button>
+            <button
+              type="button"
+              class="player__button-reverse-clockwise"
+            ></button>
+            <img
+              src="images/player(typical_page)/soundtrack.svg"
+              alt="Звуковая дорожка"
+              class="player__soundtrack"
+            />
+            <i class="player__time">15:20</i>
+            <button type="button" class="player__button-mute"></button>
+          </div>
+          <i class="player__title"
+            >Запись разговора Юры и Вени Аронвальда, 1937 год</i
+          >
         </section>
         <p>
           Много и домашних дел: маме помочь, распилить с отцом дрова. Вот только
