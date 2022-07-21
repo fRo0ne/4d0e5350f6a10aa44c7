@@ -2,3 +2,9 @@
   text-decoration: none;
   color: #323232;
 }
+
+.footer__link:hover {
+  border-bottom: 1px solid #323232;
+  margin-bottom: -1px;
+
+}

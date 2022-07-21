@@ -6,6 +6,8 @@ const sectionNewsMain = document.querySelectorAll(".news-main__all");
 const journalMainBlock = document.querySelector('.journal-projito');
 const sliderContainer = journalMainBlock.querySelector('.slider__items');
 const sectionReaderAll = document.querySelectorAll('.journal-projito__card_reader');
+const specialContainer = document.querySelector('.special-projects');
+const specialCards = specialContainer.querySelectorAll('.special-projects__card');
 // const templateButtonNewsMain = document.querySelector("#button__tablet").content;
 // const templateButtonDesktop = document.querySelector("#button__desktop").content;
 const templateNewsMainBlock = document.querySelector("#template-news").content;
@@ -112,5 +114,10 @@ window.addEventListener('resize', () => {
   renderMaterials();
 });
 
+specialCards.forEach ( item => {
+  item.addEventListener('click', () => {
+    location = 'typical.html';
+  })
+})
 renderNews();
 renderMaterials();

@@ -3,10 +3,16 @@
     max-width: 678px;
     display: flex;
     margin-right: 20px;
+    cursor: pointer;
 }
 .special-projects__card:last-child {
     margin-right: 0;
 }
+
+.special-projects__card:hover {
+  opacity: .8;
+}
+
 @media screen and (max-width: 1023px) {
     .special-projects__card {
         max-width: 361px;

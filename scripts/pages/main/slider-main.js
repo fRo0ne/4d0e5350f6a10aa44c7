@@ -83,3 +83,7 @@ buttonsMaterials.forEach( (el,index) => {
     actionMaterialsButton(evt.target,index);
   });
 })
+
+window.addEventListener('resize', () => {
+  setTransformValue(cardsContainer, 0);
+})
