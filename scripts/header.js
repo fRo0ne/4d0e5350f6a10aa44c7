@@ -22,7 +22,6 @@ checkbox.addEventListener('click', function() {
 });
 
 window.addEventListener('resize', evt => {
-  console.log(evt.target.innerWidth)
   if (evt.target.innerWidth > 767) {
     checkbox.checked = false;
     removeClass(header, 'header_mobile-menu')
