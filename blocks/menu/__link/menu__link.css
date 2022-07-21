@@ -7,6 +7,12 @@
   margin-right: 10px;
 }
 
+
+.menu__link:hover {
+  border-bottom: 1px solid #323232;
+  margin-bottom: -1px;
+}
+
 @media screen and (max-width: 600px) {
   .menu__link {
     padding: 0;
