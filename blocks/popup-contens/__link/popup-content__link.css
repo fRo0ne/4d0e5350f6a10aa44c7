@@ -10,10 +10,10 @@
 }
 
 .popup-contens__link:nth-child(2) {
-  margin: 170px auto 0;
+  margin: 221px auto 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 960px) {
   .popup-contens__link {
     width: 300px;
     font-size: 1.5em;
