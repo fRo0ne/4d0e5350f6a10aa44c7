@@ -9,7 +9,7 @@
 @media screen and (max-width: 1023px) {
   .footer {
     max-width: 735px;
-    width: calc(100vw * 735 / 768);
+    width: calc(100% - 32px);
     font: 14px/18.13px "PT sans", sans-serif;
     margin-bottom: 22px;
   }
@@ -17,8 +17,8 @@
 
 @media screen and (max-width: 767px) {
   .footer {
-    min-width: 336px;
-    width: calc(100vw * 336 / 360);
+    min-width: 296px;
+    width: calc(100% - 24px);
     margin-bottom: 16px;
   }
 }

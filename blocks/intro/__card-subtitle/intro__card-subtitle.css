@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 767px) {
   .intro__card-subtitle {
-    max-width: 315px;
+    max-width: calc(100% - 24px);
     width: 100%;
     min-height: 45px;
     margin: 12px auto 12px;

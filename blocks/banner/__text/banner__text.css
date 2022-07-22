@@ -11,7 +11,7 @@
 @media screen and (max-width: 1400px) {
   .banner__text {
     line-height: 1.28;
-    width: 419px;
+    max-width: 419px;
   }
 }
 

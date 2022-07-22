@@ -23,7 +23,7 @@
 
 @media screen and (max-width: 767px) {
     .special-projects__card {
-        max-width: 336px;
+        width: 100%;
         margin: 24px 0 0;
         background-color: #fff;
     }
