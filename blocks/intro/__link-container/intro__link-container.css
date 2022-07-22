@@ -15,7 +15,7 @@
 
 @media screen and (max-width: 767px) {
   .intro__link-container {
-    padding-bottom: 12px;
+    padding-bottom: 15px;
     max-width: calc(100% - 24px);
   }
 }
