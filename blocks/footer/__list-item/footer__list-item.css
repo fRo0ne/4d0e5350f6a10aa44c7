@@ -9,3 +9,14 @@
     width: fit-content;
   }
 }
+
+@media screen and (max-width: 1023px) {
+  .footer__legal-info .footer__list-item {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__legal-info .footer__list-item {
+    margin-bottom: 4px;
+  }
+}

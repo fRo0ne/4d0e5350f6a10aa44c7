@@ -1,3 +1,7 @@
+.footer__legal-info {
+  margin-right: 54px;
+}
+
 @media screen and (max-width: 768px) {
   .footer__legal-info {
     height: fit-content;
