@@ -20,5 +20,5 @@
 @import url(../blocks/page-numbers/__arrow-right/page-numbers__arrow-right.css);
 @import url(../blocks/page-numbers/__number/page-numbers__number.css);
 @import url(../blocks/page-numbers/__number/_active/page-numbers__number_active.css);
-@import url(../blocks/page-numbers/_flex_end/page-numbers_flex-end.css);
+@import url(../blocks/page-numbers/__number/_flex-end/page-numbers__number_flex-end.css);
 @import url(../blocks/item/_news_width/item_news_width.css);

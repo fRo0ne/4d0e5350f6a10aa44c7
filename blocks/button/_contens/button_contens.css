@@ -1,4 +1,4 @@
-.button__contens {
+.button_contens {
   font: 1.3em/1em "WF", sans-serif;
   color: #323232;
   position: fixed;
@@ -14,11 +14,11 @@
 }
 
 @media screen and (max-width: 767px) {
-  .button__contens {
+  .button_contens {
     left: -35px;
     padding: 0 0 0 5px;
   }
 }
-.button__contens:hover {
+.button_contens:hover {
   border-bottom: 1px solid #323232;
 }

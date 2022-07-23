@@ -19,10 +19,10 @@
   </head>
   <body>
     <header class="header header_theme_white">
-      <div class="header__container">
+      <div class="header__container menu">
         <div class="logo logo_place_header"></div>
         <nav>
-          <ul class="menu">
+          <ul class="menu__desktop">
             <li class="menu__item">
               <a href="https://prozhito.org/page/archive" class="menu__link"
                 >Архив</a
@@ -35,24 +35,26 @@
             </li>
             <li class="menu__item">
               <a href="#" class="menu__link">О проекте</a>
-              <ul class="menu menu__dropdown">
-                <li class="menu__item menu__item_dropdown">
+              <ul class="menu__dropdown">
+                <li class="menu__dropdown-item">
                   <a href="#" class="menu__link menu__link_dropdown"
                     >О&nbsp;прожито</a
                   >
                 </li>
-                <li class="menu__item menu__item_dropdown">
+                <li class="menu__dropdown-item">
                   <a href="#" class="menu__link menu__link_dropdown"
                     >Как&nbsp;работать?</a
                   >
                 </li>
-                <li class="menu__item menu__item_dropdown">
+                <li class="menu__dropdown-item">
                   <a href="#" class="menu__link menu__link_dropdown">Медиа</a>
                 </li>
-                <li class="menu__item menu__item_dropdown">
-                  <a href="#" class="menu__link menu__link_dropdown">Новости</a>
+                <li class="menu__dropdown-item">
+                  <a href="#" class="menu__link menu__link_dropdown"
+                    >Новости</a
+                  >
                 </li>
-                <li class="menu__item menu__item_dropdown">
+                <li class="menu__dropdown-item">
                   <a href="#" class="menu__link menu__link_dropdown"
                     >Спецпроекты</a
                   >
@@ -78,14 +80,10 @@
           <div class="menu__mobile-links-section">
             <ul class="menu__mobile-links">
               <li class="menu__item">
-                <a href="https://prozhito.org/page/archive" class="menu__link"
-                  >Архив</a
-                >
+                <a href="#" class="menu__link">Архив</a>
               </li>
               <li class="menu__item">
-                <a href="https://prozhito.org/persons" class="menu__link"
-                  >Корпус</a
-                >
+                <a href="#" class="menu__link">Корпус</a>
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link menu__link_open-submenu"
@@ -135,7 +133,7 @@
           <p class="typical__subtitle-part">опыт читателя</p>
         </div>
       </div>
-      <button type="button" class="button__contens">оглавление</button>
+      <button type="button" class="button button_contens">оглавление</button>
       <div class="article">
         <h1>Опыт прочтения одного дневника</h1>
         <h2>Часть один</h2>
@@ -203,7 +201,7 @@
         </p>
         <div class="video">
           <div class="video__container">
-            <button class="button__play-video"></button>
+            <button class="button button_play-video"></button>
             <video class="video__source" src="#"></video>
           </div>
           <span class="video__title">Лекция о дневнике Юры Беневольского</span>
@@ -737,13 +735,13 @@
     </footer>
     <section class="popup-contens">
       <div class="popup-contens__link-container">
-        <button class="popup-contest__close-button"></button>
+        <button class="popup-contens__close-button"></button>
         <a href="typical.html" class="popup-contens__link">Часть один</a>
         <a href="#" class="popup-contens__link">Часть два</a>
         <a href="#" class="popup-contens__link">Часть три</a>
       </div>
     </section>
-    <section class="popup-inf popup_opened">
+    <section class="popup-inf popup-inf_opened">
       <button class="popup-inf__close-button"></button>
       <p class="popup-inf__title">Это верно</p>
       <p class="popup-inf__subtitle">Информация достоверна</p>

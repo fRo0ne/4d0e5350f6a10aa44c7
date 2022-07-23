@@ -5,9 +5,11 @@
 @import url(../blocks/header/_mobile-menu/header_mobile-menu.css);
 /* menu */
 @import url(../blocks/menu/menu.css);
+@import url(../blocks/menu/__desktop/menu__desktop.css);
 @import url(../blocks/menu/__dropdown/menu__dropdown.css);
 @import url(../blocks/menu/__item/menu__item.css);
 @import url(../blocks/menu/__item/_dropdown/menu__item_dropdown.css);
+@import url(../blocks/menu/__dropdown-item/menu__dropdown-item.css);
 @import url(../blocks/menu/__link/menu__link.css);
 @import url(../blocks/menu/__link/_dropdown/menu__link_dropdown.css);
 @import url(../blocks/menu/__checkbox/menu__checkbox.css);

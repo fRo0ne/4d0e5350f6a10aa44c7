@@ -11,6 +11,7 @@
   opacity: 0;
   transition: visibility 0.1s, opacity 0.1s linear;
   align-items: flex-end;
+  padding: 0;
 }
 
 @media screen and (max-width: 1023px) {

@@ -180,11 +180,11 @@ function prepareSliderContainer(element) {
 }
 
 function calculateWidthElement(element) {
-  return element.querySelector('.item_slider').offsetWidth;
+  return element.querySelector('.item-slider').offsetWidth;
 }
 
 function getParentContainer(element) {
-  return element.closest('.slider__container');
+  return element.closest('.slider');
 }
 
 function getSliderIndicator(element) {
@@ -192,7 +192,7 @@ function getSliderIndicator(element) {
 }
 
 function getItemSliderAll(element) {
-  return element.querySelectorAll('.item_slider');
+  return element.querySelectorAll('.item-slider');
 }
 
 function getButtonLeft(element) {

@@ -1,25 +1,4 @@
 .menu {
-  min-width: 345px;
-  list-style-type: none;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
-  position: relative;
   font: 1em/1.26 "PT sans", sans-serif;
   color: #323232;
-}
-
-@media screen and (max-width: 1023px) {
-  .menu {
-    min-width: 284px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .menu {
-    display: none;
-  }
 }

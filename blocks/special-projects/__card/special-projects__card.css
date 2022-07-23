@@ -16,6 +16,7 @@
 @media screen and (max-width: 1023px) {
     .special-projects__card {
         max-width: 361px;
+        min-height: 354px;
         flex-direction: column;
         margin-right: 14px;
     }

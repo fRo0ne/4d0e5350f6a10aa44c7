@@ -12,7 +12,7 @@
 
   @media screen and (max-width: 767px) {
     .special-projects__date {
-      margin: 0 0 12px 8px;
+      margin: 24px 0 12px 8px;
       font: 1em/1.22 'PT sans', sans-serif;
     }
   }

@@ -7,6 +7,7 @@
   .journal-projito__text-quote {
     display: none;
     margin: 0 0 18px;
+    font-size: .85em;
   }
   .journal-projito__card_reader .journal-projito__text-quote {
     display: block;

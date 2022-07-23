@@ -1,7 +1,7 @@
-const contensButton = document.querySelector(".button__contens");
+const contensButton = document.querySelector(".button_contens");
 const contensPopup = document.querySelector(".popup-contens");
 const closeContensPopup = document.querySelector(
-  ".popup-contest__close-button"
+  ".popup-contens__close-button"
 );
 const closeInfPopup = document.querySelector(".popup-inf__close-button");
 const infPopup = document.querySelector(".popup-inf");
@@ -9,17 +9,17 @@ const audio = document.querySelector("#audio");
 const player = document.querySelector(".player");
 
 contensButton.addEventListener("click", () => {
-  contensPopup.classList.add("popup_opened");
-  infPopup.classList.remove("popup_opened");
+  contensPopup.classList.add("popup-inf_opened");
+  infPopup.classList.remove("popup-inf_opened");
 });
 
 function closePopup(popup) {
-  popup.classList.remove("popup_opened");
+  popup.classList.remove("popup-inf_opened");
 }
 
 closeContensPopup.addEventListener("click", () => {
   closePopup(contensPopup);
-  infPopup.classList.add("popup_opened");
+  infPopup.classList.add("popup-inf_opened");
 });
 
 closeInfPopup.addEventListener("click", () => {

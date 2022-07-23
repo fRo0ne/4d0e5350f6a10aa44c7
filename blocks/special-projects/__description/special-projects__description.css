@@ -9,7 +9,7 @@
     .special-projects__description {
         font: 1em/1.28 'PT sans', sans-serif;
         opacity: 1;
-        margin: 8px 0 24px;
+        margin: 8px 0 0;
     }
 }
 

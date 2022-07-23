@@ -1,4 +1,4 @@
-.button__play-video {
+.button_play-video {
   background-image: url(../../../images/play_video.svg);
   width: 112px;
   height: 112px;
@@ -15,7 +15,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .button__play-video {
+  .button_play-video {
     background-image: url(../../../images/play_video_360px.svg);
     width: 60px;
     height: 55px;
@@ -24,6 +24,6 @@
   }
 }
 
-.button__play-video:hover {
+.button_play-video:hover {
   opacity: 0.5;
 }
