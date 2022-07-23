@@ -7,3 +7,9 @@
     margin-bottom: 24px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .section-title_materials-margin {
+    margin-right: 20px;
+  }
+}

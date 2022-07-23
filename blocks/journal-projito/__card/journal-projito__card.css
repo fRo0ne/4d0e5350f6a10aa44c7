@@ -23,6 +23,7 @@
 
 @media screen and (max-width: 767px) {
   .journal-projito__card {
+    max-height: 352px;
     position: absolute;
     inset: 0;
     width: 252px;

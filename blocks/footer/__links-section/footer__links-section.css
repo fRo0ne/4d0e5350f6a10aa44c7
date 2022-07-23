@@ -20,6 +20,6 @@
 
 @media screen and (max-width: 767px) {
   .footer__links-section {
-    height: 104px;
+    max-height: 102px;
   }
 }

@@ -26,5 +26,8 @@
     margin: 0;
     margin-right: 12px;
   }
+  .news-main .item-slider + .item-slider {
+    margin-left: 0;
+  }
 
 }
