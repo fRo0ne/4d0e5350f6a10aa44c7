@@ -11,6 +11,7 @@
   }
   .journal-projito__card_reader .journal-projito__text-quote {
     display: block;
+    margin-bottom: 10px;
   }
 }
 
