@@ -6,6 +6,12 @@
   padding: 8px 0 0;
 }
 
+@media screen and (min-width: 1024px) {
+  .news-main .item__tag {
+    font-style: normal;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .item__tag {
     display: flex;

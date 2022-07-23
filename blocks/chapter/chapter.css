@@ -18,6 +18,9 @@
     margin: 0;
     padding: 16px 20px 41px 16px;
   }
+  .journal-projito .chapter {
+    padding-bottom: 38px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -26,6 +29,7 @@
     max-width: 268px;
     color: #323232;
     padding: 0 0 16px;
+    background: none;
   }
   .journal-projito .chapter {
     padding-bottom: 24px;

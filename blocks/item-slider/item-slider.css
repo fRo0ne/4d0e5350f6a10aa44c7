@@ -10,6 +10,9 @@
   .item-slider + .item-slider {
     margin-left: 12px;
   }
+  .news-main .item-slider + .item-slider {
+    margin-left: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {

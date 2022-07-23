@@ -11,4 +11,7 @@
   .journal-projito__card-container {
     min-height: 280px;
   }
+  .journal-projito .journal-projito__card-container {
+    width: calc(100% - 16px);
+  }
 }
