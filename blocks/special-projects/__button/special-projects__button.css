@@ -17,5 +17,6 @@
         max-width: calc(100% - 24px);
         padding-top: 24px;
         padding-bottom: 28px;
+        text-align: center;
     }
 }
