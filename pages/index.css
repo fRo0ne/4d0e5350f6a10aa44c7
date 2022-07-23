@@ -57,6 +57,7 @@
 @import url(../blocks/journal-projito/__text-title/journal-projito__text-title.css);
 @import url(../blocks/journal-projito/__text-subtitile/journal-projito__text-subtitle.css);
 @import url(../blocks/journal-projito/__text-quote/journal-projito__text-quote.css);
+@import url(../blocks/journal-projito/__text-quote/_reader/journal-projito__text-quote_reader.css);
 @import url(../blocks/journal-projito/__card/_reader/journal-projito__card_reader.css);
 @import url(../blocks/journal-projito/__card/_slider/journal-projito__card_slider.css);
 @import url(../blocks/journal-projito/__text-container/_reader/journal-projito__text-container_reader.css);
