@@ -21,8 +21,8 @@
   .intro__card-subtitle {
     max-width: calc(100% - 24px);
     width: 100%;
-    min-height: 45px;
-    margin: 12px auto 12px;
+    min-height: 35px;
+    margin: 10px auto 12px;
     font-size: 1em;
     line-height: 1.29em;
   }
