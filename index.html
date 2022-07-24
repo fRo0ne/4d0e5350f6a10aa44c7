@@ -15,10 +15,10 @@
   <body>
     <div class="main">
       <header class="header">
-        <div class="header__container">
+        <div class="header__container menu">
           <div class="logo logo_place_header"></div>
           <nav>
-            <ul class="menu">
+            <ul class="menu__desktop">
               <li class="menu__item">
                 <a href="https://prozhito.org/page/archive" class="menu__link"
                   >Архив</a
@@ -31,26 +31,26 @@
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">О проекте</a>
-                <ul class="menu menu__dropdown">
-                  <li class="menu__item menu__item_dropdown">
+                <ul class="menu__dropdown">
+                  <li class="menu__dropdown-item">
                     <a href="#" class="menu__link menu__link_dropdown"
                       >О&nbsp;прожито</a
                     >
                   </li>
-                  <li class="menu__item menu__item_dropdown">
+                  <li class="menu__dropdown-item">
                     <a href="#" class="menu__link menu__link_dropdown"
                       >Как&nbsp;работать?</a
                     >
                   </li>
-                  <li class="menu__item menu__item_dropdown">
+                  <li class="menu__dropdown-item">
                     <a href="#" class="menu__link menu__link_dropdown">Медиа</a>
                   </li>
-                  <li class="menu__item menu__item_dropdown">
+                  <li class="menu__dropdown-item">
                     <a href="#" class="menu__link menu__link_dropdown"
                       >Новости</a
                     >
                   </li>
-                  <li class="menu__item menu__item_dropdown">
+                  <li class="menu__dropdown-item">
                     <a href="#" class="menu__link menu__link_dropdown"
                       >Спецпроекты</a
                     >
@@ -117,13 +117,13 @@
       <main class="content">
         <section class="intro">
           <div class="intro__container">
-            <h2 class="intro__title">
+            <h1 class="intro__title">
               Центр «Прожито» собирает, описывает и публикует документы личного
               происхождения и разрабатывает исследовательские инструменты
               для работы с ними. Материалы публикуются и описываются силами
               участников-волонтёров, к сообществу которых может присоединиться
               каждый.
-            </h2>
+            </h1>
             <div class="intro__card-container">
               <ul class="intro__cards">
                 <li class="intro__card">
@@ -138,7 +138,7 @@
                       <img
                         src="images/Arrow_right_intro.svg"
                         alt="Стрелка влево"
-                        class="intro__arrow"
+                        class="arrow arrow_intro"
                       />
                     </a>
                   </div>
@@ -155,7 +155,7 @@
                       <img
                         src="images/Arrow_right_intro.svg"
                         alt="Стрелка влево"
-                        class="intro__arrow"
+                        class="arrow arrow_intro"
                       />
                     </a>
                   </div>
@@ -172,7 +172,7 @@
                       <img
                         src="images/Arrow_right_intro.svg"
                         alt="Стрелка влево"
-                        class="intro__arrow"
+                        class="arrow arrow_intro"
                       />
                     </a>
                   </div>
@@ -180,7 +180,7 @@
                 <li class="intro__card">
                   <h3 class="intro__card-title">Работа с архивом</h3>
                   <p class="intro__card-subtitle">
-                    Как устроен наш архив и поиск по  сохранённым документам
+                    Как устроен наш архив и поиск по сохранённым документам
                   </p>
                   <div class="intro__link-container">
                     <p class="intro__about-link">Перейти к архиву</p>
@@ -188,7 +188,7 @@
                       <img
                         src="images/Arrow_right_intro.svg"
                         alt="Стрелка влево"
-                        class="intro__arrow"
+                        class="arrow arrow_intro"
                       />
                     </a>
                   </div>
@@ -197,12 +197,14 @@
             </div>
           </div>
         </section>
-        <!-- МАТЕРИАЛЫ -->
         <section class="news-main">
-          <div class="news-main__all">
-            <h2 class="news-main__title">Новости и события</h2>
-            <div class="news-main__tablet-container">
-              <p class="news-main__text-button">Ко всем новостям</p>
+          <div class="chapter">
+            <div class="chapter__title-container">
+              <h2 class="chapter__title">Новости</h2>
+              <p class="chapter__title">и события</p>
+            </div>
+            <div class="chapter__tablet-container">
+              <p class="chapter__text-button">Ко всем новостям</p>
               <a
                 href="news.html"
                 class="button button_size-intro button_size-slider"
@@ -210,17 +212,17 @@
                 <img
                   src="images/Arrow_right_intro.svg"
                   alt="Стрелка вправо"
-                  class="intro__arrow"
+                  class="arrow arrow_intro"
                 />
               </a>
             </div>
           </div>
-          <div class="slider__container">
-            <div class="slider">
+          <div class="slider">
+            <div class="slider__container">
               <h2 class="section-title section-title_slider-margin">Свежее</h2>
-              <div class="button__container">
-                <button class="button button_size-news arrow_left"></button>
-                <button class="button button_size-news arrow_right"></button>
+              <div class="slider__container-button">
+                <button class="button button_size-news arrow arrow_left"></button>
+                <button class="button button_size-news arrow arrow_right"></button>
               </div>
               <div class="slider__wrapper">
                 <div class="slider__items slider__items_baseline"></div>
@@ -238,13 +240,15 @@
             Материалы
           </h2>
           <ul class="cards">
-            <li class="card item_slider">
+            <li class="card item-slider">
               <a href="typical.html" class="card__link">
                 <p class="card__tag">НУЖЕН НАБОРЩИК</p>
-                <h3 class="card__title">
-                  Артамонов <br />
+                <p class="card__title card__title_top">
+                  Артамонов
+                </p>
+                <p class="card__title">
                   Виктор
-                </h3>
+                </p>
                 <img
                   src="./images/artamonov.jpg"
                   alt="фотография Артамонова Виктора"
@@ -256,13 +260,15 @@
                 </p>
               </a>
             </li>
-            <li class="card item_slider">
+            <li class="card item-slider">
               <a href="typical.html" class="card__link">
                 <p class="card__tag">НУЖНА СВЕРКА</p>
-                <h3 class="card__title">
-                  Анонимный блокадный <br />
+                <p class="card__title card__title_top">
+                  Анонимный блокадный
+                </p>
+                <p class="card__title">
                   дневник
-                </h3>
+                </p>
                 <img
                   src="./images/anonym.jpg"
                   alt="изображение анонима"
@@ -274,13 +280,15 @@
                 </p>
               </a>
             </li>
-            <li class="card item_slider">
+            <li class="card item-slider">
               <a href="typical.html" class="card__link">
                 <p class="card__tag">НОВЫЕ МАТЕРИАЛЫ</p>
-                <h3 class="card__title">
-                  Родоман <br />
+                <p class="card__title card__title_top">
+                  Родоман
+                </p>
+                <p class="card__title">
                   Борис
-                </h3>
+                </p>
                 <img
                   src="./images/rodoman.jpg"
                   alt="фотография Родомана Бориса"
@@ -336,30 +344,30 @@
           </div>
         </section>
         <section class="journal-projito">
-          <div class="news-main__all">
-            <h2 class="news-main__title">Журнал «Прожито»</h2>
-            <div class="news-main__tablet-container">
-              <p class="news-main__text-button">Посмотреть всю подборку</p>
+          <div class="chapter">
+            <h2 class="chapter__title">Журнал «Прожито»</h2>
+            <div class="chapter__tablet-container">
+              <p class="chapter__text-button">Посмотреть всю подборку</p>
               <button class="button button_size-intro button_size-slider" disabled >
                 <img
                   src="images/Arrow_right_intro.svg"
                   alt="Стрелка вправо"
-                  class="intro__arrow"
+                  class="arrow arrow_intro"
                 />
               </button>
             </div>
           </div>
-          <div class="slider__container">
-            <div class="slider">
+          <div class="slider">
+            <div class="slider__container">
               <h2 class="section-title section-title_slider-margin">
                 Новые материалы
               </h2>
-              <div class="button__container">
-                <button class="button button_size-news arrow_left"></button>
-                <button class="button button_size-news arrow_right"></button>
+              <div class="slider__container-button">
+                <button class="button button_size-news arrow arrow_left"></button>
+                <button class="button button_size-news arrow arrow_right"></button>
               </div>
               <div class="slider__wrapper">
-                <div class="slider__items journal-projito_margin-bottom"></div>
+                <div class="slider__items slider__items_margin-bottom"></div>
               </div>
             </div>
             <div class="slider__indicators slider__indicators_margin-bottom">
@@ -485,7 +493,7 @@
       </footer>
       <template id="template-projito">
         <article
-          class="journal-projito__card journal-projito__card_slider item_slider"
+          class="journal-projito__card journal-projito__card_slider item-slider"
         >
           <div class="journal-projito__card-container">
             <blockquote
@@ -501,14 +509,14 @@
       </template>
       <template id="template-reader">
         <article
-          class="journal-projito__card journal-projito__card_slider item_slider journal-projito__card_reader"
+          class="journal-projito__card journal-projito__card_slider item-slider journal-projito__card_reader"
         >
           <div class="journal-projito__card-container">
             <div
               class="journal-projito__text-container journal-projito__text-container_reader"
             >
               <h2
-                class="journal-projito__text-title journal-projito_text-align journal-projito_margin-top"
+                class="journal-projito__text-title journal-projito_text-align journal-projito_margin-top_reader"
               ></h2>
               <img class="journal-projito__reader-photo" src="" alt="" />
               <p
@@ -522,7 +530,7 @@
         </article>
       </template>
       <template id="template-news">
-        <div class="item item_slider">
+        <div class="item item-slider">
           <p class="item__date"></p>
           <p class="item__tag"></p>
           <h2 class="item__title"></h2>

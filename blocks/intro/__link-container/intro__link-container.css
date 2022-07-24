@@ -9,13 +9,13 @@
 
 @media screen and (max-width: 1023px) {
   .intro__link-container {
-    width: 310px;
+    max-width: calc(100% - 56px);
   }
 }
 
 @media screen and (max-width: 767px) {
   .intro__link-container {
-    padding-bottom: 12px;
+    padding-bottom: 15px;
     max-width: calc(100% - 24px);
   }
 }

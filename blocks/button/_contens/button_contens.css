@@ -1,11 +1,11 @@
-.button__contens {
+.button_contens {
   font: 1.3em/1em "WF", sans-serif;
   color: #323232;
   position: fixed;
   margin: 0;
-  padding: 0 0 20px 0;
-  top: 380px;
-  left: 0;
+  padding: 0;
+  top: 435px;
+  left: -25px;
   background-color: transparent;
   border: none;
   transform: rotate(-90deg);
@@ -14,11 +14,11 @@
 }
 
 @media screen and (max-width: 767px) {
-  .button__contens {
+  .button_contens {
     left: -35px;
     padding: 0 0 0 5px;
   }
 }
-.button__contens:hover {
+.button_contens:hover {
   border-bottom: 1px solid #323232;
 }

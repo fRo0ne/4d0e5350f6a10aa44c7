@@ -5,6 +5,12 @@
   margin: 0;
 }
 
+@media screen and (max-width: 1023px) {
+  .pages-nav {
+    padding-top: 27px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .pages-nav {
     padding: 20px 0 0 10px;

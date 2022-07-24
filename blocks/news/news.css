@@ -7,6 +7,6 @@
 
 @media screen and (max-width: 767px) {
   .news {
-    width: 340px;
+    max-width: 340px;
   }
 }

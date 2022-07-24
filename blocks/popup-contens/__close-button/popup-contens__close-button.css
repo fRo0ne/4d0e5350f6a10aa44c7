@@ -1,4 +1,4 @@
-.popup-contest__close-button {
+.popup-contens__close-button {
   position: absolute;
   top: 86px;
   right: 35px;
@@ -11,6 +11,6 @@
   cursor: pointer;
 }
 
-.popup-contest__close-button:hover {
+.popup-contens__close-button:hover {
   opacity: 50%;
 }

@@ -15,7 +15,8 @@
     max-width: 676px;
     width: 100%;
     padding-top: 40px;
-    line-height: 1.15em;
+    font-size: 2.14em;
+    line-height: 1.23em;
   }
 }
 
@@ -23,7 +24,7 @@
   .intro__title {
     max-width: 336px;
     width: 100%;
-    padding: 31px 0 0 0;
+    padding: 20px 0 0 0;
     font-size: 1.86em;
     line-height: 1em;
   }

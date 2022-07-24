@@ -9,3 +9,11 @@
     margin: 0 0 0 10px;
   }
 }
+
+@media screen and (max-width: 350px) {
+  .player__soundtrack {
+    max-width: 100px;
+    height: 25px;
+    margin: 0 0 0 10px;
+  }
+}

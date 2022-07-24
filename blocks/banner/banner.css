@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 767px) {
   .banner {
-    grid-template-columns: 336px;
+    grid-template-columns: minmax(30%, 336px);
     grid-row-gap: 16px;
     justify-content: center;
     justify-items: center;

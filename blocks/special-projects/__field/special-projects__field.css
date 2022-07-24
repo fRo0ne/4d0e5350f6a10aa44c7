@@ -9,6 +9,6 @@
 @media screen and (max-width: 767px) {
     .special-projects__field {
         margin-left: 8px;
-        width: 327px;
+        max-width: 327px;
     }
 }

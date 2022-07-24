@@ -48,7 +48,7 @@ function createMaterialsCard(item,index,position) {
 }
 
 function createNewsCard(item) {
-  const sliderNews = templateNewsMainBlock.querySelector('.item_slider').cloneNode(true);
+  const sliderNews = templateNewsMainBlock.querySelector('.item-slider').cloneNode(true);
   const newsDate = sliderNews.querySelector('.item__date');
   const newsTag = sliderNews.querySelector('.item__tag');
   const newsTitle = sliderNews.querySelector('.item__title');

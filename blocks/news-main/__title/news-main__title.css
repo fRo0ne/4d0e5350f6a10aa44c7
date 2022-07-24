@@ -6,6 +6,6 @@
 
 @media screen and (max-width: 767px) {
   .news-main__title {
-    white-space: nowrap;
+    min-width: 300px;
   }
 }

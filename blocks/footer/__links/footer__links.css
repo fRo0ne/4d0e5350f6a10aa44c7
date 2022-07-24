@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0;
   display: flex;
+  font: 16px/1.18 "PT sans", sans-serif;
+}
+
+@media screen and (max-width: 1023px) {
+  .footer__links {
+    font: 14px/1.21 "PT sans", sans-serif;
+  }
 }
 
 @media screen and (max-width: 767px) {

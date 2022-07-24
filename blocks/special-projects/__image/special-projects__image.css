@@ -14,7 +14,6 @@
 }
 @media screen and (max-width: 767px) {
     .special-projects__image {
-        max-width: 336px;
         height: 200px;
     }
 }

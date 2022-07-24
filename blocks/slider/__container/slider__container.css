@@ -1,9 +1,17 @@
 .slider__container {
   position: relative;
-  overflow: hidden;
-  width: 100%;
-  background: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  margin-left: 20px;
+}
+
+
+@media screen and (max-width: 1023px) {
+  .slider__container {
+    margin-left: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slider__container {
+    margin: 0;
+  }
 }

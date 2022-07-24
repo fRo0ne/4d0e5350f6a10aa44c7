@@ -2,13 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-@media screen and (max-width: 1023px) {
-    .special-projects__main-text {
-        justify-content: space-between;
-        min-height: 172px;
-    }
+    height: 100%;
 }
 
 @media screen and (max-width: 767px) {
