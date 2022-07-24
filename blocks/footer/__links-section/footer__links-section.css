@@ -1,7 +1,7 @@
 .footer__links-section {
   border-top: 1px solid rgba(50, 50, 50, 0.3);
   border-bottom: 1px solid rgba(50, 50, 50, 0.3);
-  height: 87px;
+  min-height: 87px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,12 +14,12 @@
     border-top-color: rgba(165, 205, 171, 0.4);
     border-bottom-color: rgba(165, 205, 171, 0.4);
     text-transform: uppercase;
-    max-height: 68px;
+    min-height: 68px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .footer__links-section {
-    max-height: 102px;
+    min-height: 102px;
   }
 }

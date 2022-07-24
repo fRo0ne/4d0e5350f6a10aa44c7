@@ -18,5 +18,6 @@
 @media screen and (max-width: 767px) {
   .journal-projito__text-quote {
     display: block;
+    margin-bottom: 25px;
   }
 }
