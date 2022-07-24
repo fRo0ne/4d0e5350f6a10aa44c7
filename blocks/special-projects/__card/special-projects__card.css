@@ -1,5 +1,6 @@
 .special-projects__card {
     background-color: #F7F4F0;
+    width: 100%;
     max-width: 678px;
     display: flex;
     margin-right: 20px;
